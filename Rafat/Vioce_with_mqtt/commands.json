@@ -1,0 +1,1227 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-04-19T18:46:04.407618",
+    "machine_id": "UNKNOWN_MACHINE",
+    "user_id": "123",
+    "transcription_id": 1,
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "esp/commands",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-04-19T18:55:11.475508",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 4,
+    "intent": "ORDER",
+    "speech_text": "Please open the Volvo.",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-04-19T19:05:58.652321",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 6,
+    "intent": "MEASURE",
+    "speech_text": "Please, analysis the current of the machine one zero zero three.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-04-19T19:08:35.239851",
+    "employee_id": "15792",
+    "machine_id": "MACHINE_1004",
+    "transcription_id": 8,
+    "intent": "MEASURE",
+    "speech_text": "machine 1004 please read the wattage of your voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-04-19T19:10:11.691708",
+    "employee_id": "15792",
+    "machine_id": "MACHINE_3101",
+    "transcription_id": 9,
+    "intent": "MEASURE",
+    "speech_text": "machine 3101 please analysis is a current",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-04-19T19:15:50.821262",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 11,
+    "intent": "MEASURE",
+    "speech_text": "Which means, three, one, zero Please. Once there's a voltage resident.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-04-19T19:23:22.590755",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 13,
+    "intent": "MEASURE",
+    "speech_text": "machine, c101, please! And that is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-04-19T19:36:19.445836",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 14,
+    "intent": "MEASURE",
+    "speech_text": "machine. So you want to do one please. And this is a voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-04-19T19:36:51.139392",
+    "employee_id": "15792",
+    "machine_id": "MACHINE_310",
+    "transcription_id": 15,
+    "intent": "MEASURE",
+    "speech_text": "machine 310 please, and that is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-04-19T19:42:20.562404",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 18,
+    "intent": "MEASURE",
+    "speech_text": "Please machine a C1-01 and that is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-04-19T19:42:45.451362",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 19,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3-1-Z-1 and analysis of voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-04-19T19:47:48.055785",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "transcription_id": 20,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 1, 2, 3, 4. And that is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-04-19T19:50:49.059124",
+    "employee_id": "15792",
+    "machine_id": "3",
+    "transcription_id": 21,
+    "intent": "MEASURE",
+    "speech_text": "machine 3-1-0-1, please announce the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 14,
+    "timestamp": "2026-04-19T19:51:34.557200",
+    "employee_id": "15792",
+    "machine_id": "30031",
+    "transcription_id": 22,
+    "intent": "MEASURE",
+    "speech_text": "Please, machine 300, 31, please analysis the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 15,
+    "timestamp": "2026-04-19T19:51:48.875053",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "transcription_id": 23,
+    "intent": "MEASURE",
+    "speech_text": "Please machine, please sell them 101. Please, analysis is a voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 16,
+    "timestamp": "2026-04-19T19:52:09.366998",
+    "employee_id": "15792",
+    "machine_id": "3000",
+    "transcription_id": 24,
+    "intent": "MEASURE",
+    "speech_text": "Please, machine 3000 and 100 and 1. And all this is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 17,
+    "timestamp": "2026-04-19T19:56:20.850698",
+    "employee_id": "16572",
+    "machine_id": "300",
+    "transcription_id": 27,
+    "intent": "ORDER",
+    "speech_text": "machine 300 and one open the state",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 18,
+    "timestamp": "2026-04-19T20:01:12.904055",
+    "employee_id": "19534",
+    "machine_id": "99999",
+    "transcription_id": 28,
+    "intent": "MEASURE",
+    "speech_text": "Please machine, see one, see one. And that is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 19,
+    "timestamp": "2026-04-19T20:01:30.272605",
+    "employee_id": "19534",
+    "machine_id": "3",
+    "transcription_id": 29,
+    "intent": "MEASURE",
+    "speech_text": "There is machine 3-1-0-1 and analysis is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 20,
+    "timestamp": "2026-04-19T20:04:17.700200",
+    "employee_id": "19534",
+    "machine_id": "1301",
+    "transcription_id": 30,
+    "intent": "ORDER",
+    "speech_text": "machine 1300 and one open the state.",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 21,
+    "timestamp": "2026-04-19T20:04:39.422320",
+    "employee_id": "19534",
+    "machine_id": "99999",
+    "transcription_id": 31,
+    "intent": "MEASURE",
+    "speech_text": "Please machine, please Southern 100 and 1. And unless it's the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 22,
+    "timestamp": "2026-04-19T20:04:53.045813",
+    "employee_id": "19534",
+    "machine_id": "104",
+    "transcription_id": 32,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3,100 and 1. Analysis is a voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 23,
+    "timestamp": "2026-04-19T20:07:07.761535",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 33,
+    "intent": "MEASURE",
+    "speech_text": "these machine 3101 and analysis the current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 24,
+    "timestamp": "2026-04-19T20:08:15.946773",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 35,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3,101 and analysis of voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 25,
+    "timestamp": "2026-04-19T20:09:23.981522",
+    "employee_id": "15972",
+    "machine_id": "SEE",
+    "transcription_id": 38,
+    "intent": "MEASURE",
+    "speech_text": "Please machine see ones in one and analysis the voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 26,
+    "timestamp": "2026-04-19T20:11:25.971215",
+    "employee_id": "19537",
+    "machine_id": "3103",
+    "transcription_id": 41,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3103 and this is the voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 27,
+    "timestamp": "2026-04-19T20:12:01.073454",
+    "employee_id": "19537",
+    "machine_id": "3101",
+    "transcription_id": 42,
+    "intent": "ORDER",
+    "speech_text": "Please machine 3-1-0-1. Open the machine.",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 28,
+    "timestamp": "2026-04-19T20:12:27.889749",
+    "employee_id": "19537",
+    "machine_id": "310",
+    "transcription_id": 43,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 310. Give me a message of all the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 29,
+    "timestamp": "2026-04-19T20:12:45.020755",
+    "employee_id": "19537",
+    "machine_id": "310",
+    "transcription_id": 44,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 310 get me the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 30,
+    "timestamp": "2026-04-19T20:12:56.995442",
+    "employee_id": "19537",
+    "machine_id": "333",
+    "transcription_id": 45,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3, 3, 3, Give me the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 31,
+    "timestamp": "2026-04-19T20:13:10.474524",
+    "employee_id": "19537",
+    "machine_id": "10000",
+    "transcription_id": 46,
+    "intent": "MEASURE",
+    "speech_text": "machine 10000 analysis of voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 32,
+    "timestamp": "2026-04-19T20:13:22.329001",
+    "employee_id": "19537",
+    "machine_id": "3111",
+    "transcription_id": 47,
+    "intent": "MEASURE",
+    "speech_text": "machine 3111 analysis is the voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 33,
+    "timestamp": "2026-04-19T20:19:13.755858",
+    "employee_id": "19570",
+    "machine_id": "3101",
+    "transcription_id": 48,
+    "intent": "ORDER",
+    "speech_text": "Please machine 3101 open the machine",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 34,
+    "timestamp": "2026-04-20T18:19:48.731553",
+    "employee_id": "15792",
+    "machine_id": "NUMBER",
+    "transcription_id": 49,
+    "intent": "MEASURE",
+    "speech_text": "please machine number c1 0 1 analysis of voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 35,
+    "timestamp": "2026-04-20T18:20:16.620329",
+    "employee_id": "15792",
+    "machine_id": "NUMBER",
+    "transcription_id": 50,
+    "intent": "MEASURE",
+    "speech_text": "Please machine number 3101 analysis of voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 36,
+    "timestamp": "2026-04-20T18:20:29.073681",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 51,
+    "intent": "MEASURE",
+    "speech_text": "These machine 3101 and LSS the voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 37,
+    "timestamp": "2026-04-20T18:27:40.800941",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "transcription_id": 52,
+    "intent": "MEASURE",
+    "speech_text": "Let's see if we want zero zero and that is the current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 38,
+    "timestamp": "2026-04-20T18:28:02.749963",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "transcription_id": 53,
+    "intent": "MEASURE",
+    "speech_text": "please Rashid, C1, 0, 0, and Alice is a current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 39,
+    "timestamp": "2026-04-20T18:29:46.036318",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "transcription_id": 54,
+    "intent": "MEASURE",
+    "speech_text": "please make sure you see one zero one and now this is a current",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 40,
+    "timestamp": "2026-04-20T18:30:06.945820",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 55,
+    "intent": "MEASURE",
+    "speech_text": "Please, machine 3-1-0-1 analysis the current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 41,
+    "timestamp": "2026-04-20T18:31:35.019917",
+    "employee_id": "15792",
+    "machine_id": "100",
+    "transcription_id": 58,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 100 and access the current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 42,
+    "timestamp": "2026-04-20T18:33:17.459743",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "transcription_id": 59,
+    "intent": "MEASURE",
+    "speech_text": "Please 1001 This is the currently-tabut cada",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 43,
+    "timestamp": "2026-04-20T18:33:30.410262",
+    "employee_id": "15792",
+    "machine_id": "C1-01",
+    "transcription_id": 60,
+    "intent": "MEASURE",
+    "speech_text": "Please machine C1-01. Analysis the current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 44,
+    "timestamp": "2026-04-20T18:34:01.283575",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "transcription_id": 62,
+    "intent": "MEASURE",
+    "speech_text": "Please\u044f\u043d\u0438h, 50001 analysis is incorrect.",
+    "action_key": "MEASURE_ALL",
+    "command": {
+      "action": "READ_ALL_SENSORS",
+      "target": "sensors",
+      "description": "Read all sensor values"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 45,
+    "timestamp": "2026-04-20T18:34:29.335375",
+    "employee_id": "15792",
+    "machine_id": "3",
+    "transcription_id": 63,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3u101 and access the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 46,
+    "timestamp": "2026-04-20T18:34:56.079140",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 64,
+    "intent": "MEASURE",
+    "speech_text": "machine 3101 analysis is voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 47,
+    "timestamp": "2026-04-20T18:39:07.214190",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 65,
+    "intent": "ORDER",
+    "speech_text": "Please machine 3101. Open the device.",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 48,
+    "timestamp": "2026-04-20T18:54:18.609107",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 66,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3-1-0-1 analysis of voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 49,
+    "timestamp": "2026-04-20T18:55:05.125755",
+    "employee_id": "15792",
+    "machine_id": "SEE",
+    "transcription_id": 67,
+    "intent": "MEASURE",
+    "speech_text": "please machine see you one zero one analysis the current",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 50,
+    "timestamp": "2026-04-20T18:55:14.594615",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 68,
+    "intent": "MEASURE",
+    "speech_text": "Please, machine 3-1-0-1, analysis occurred.",
+    "action_key": "MEASURE_ALL",
+    "command": {
+      "action": "READ_ALL_SENSORS",
+      "target": "sensors",
+      "description": "Read all sensor values"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 51,
+    "timestamp": "2026-04-20T18:55:55.994274",
+    "employee_id": "15873",
+    "machine_id": "3101",
+    "transcription_id": 69,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3101 analysis of voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 52,
+    "timestamp": "2026-04-20T18:58:02.281261",
+    "employee_id": "15873",
+    "machine_id": "310",
+    "transcription_id": 70,
+    "intent": "ORDER",
+    "speech_text": "machine 310 open device",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 53,
+    "timestamp": "2026-04-20T18:58:12.542123",
+    "employee_id": "15873",
+    "machine_id": "C101",
+    "transcription_id": 71,
+    "intent": "ORDER",
+    "speech_text": "machine C101 open device",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 54,
+    "timestamp": "2026-04-20T18:58:22.080073",
+    "employee_id": "15873",
+    "machine_id": "3101",
+    "transcription_id": 72,
+    "intent": "ORDER",
+    "speech_text": "machine 3101 open device",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 55,
+    "timestamp": "2026-04-20T18:58:47.560566",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 73,
+    "intent": "ORDER",
+    "speech_text": "machine 3101 open device",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 56,
+    "timestamp": "2026-04-20T19:03:13.346084",
+    "employee_id": "15792",
+    "machine_id": "C1",
+    "transcription_id": 74,
+    "intent": "MEASURE",
+    "speech_text": "Please, machine C1, D1. And now this is the current.",
+    "action_key": "MEASURE_AMPERE",
+    "command": {
+      "action": "READ_AMPERE",
+      "target": "sensor_ampere",
+      "description": "Read ampere (current) sensor value",
+      "sensor_type": "ampere"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 57,
+    "timestamp": "2026-04-20T19:03:35.270717",
+    "employee_id": "15792",
+    "machine_id": "31",
+    "transcription_id": 75,
+    "intent": "MEASURE",
+    "speech_text": "Please, please machine 3-1-Z-1 and that is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 58,
+    "timestamp": "2026-04-20T19:03:43.936344",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 76,
+    "intent": "MEASURE",
+    "speech_text": "Please machine 3101 and I will see the voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 59,
+    "timestamp": "2026-04-20T19:05:20.863187",
+    "employee_id": "15792",
+    "machine_id": "3102",
+    "transcription_id": 77,
+    "intent": "ORDER",
+    "speech_text": "Please machine 3102 Open Device",
+    "action_key": "ORDER_OPEN",
+    "command": {
+      "action": "OPEN",
+      "target": "system",
+      "description": "Open / initialize the system"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 60,
+    "timestamp": "2026-04-20T19:06:35.342248",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "transcription_id": 78,
+    "intent": "ORDER",
+    "speech_text": "Please, machine 3101. Make production is 50.",
+    "action_key": "ORDER_PRODUCE",
+    "command": {
+      "action": "PRODUCE",
+      "target": "production_line",
+      "description": "Produce a specified number of pieces",
+      "quantity": 50
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": true
+    }
+  },
+  {
+    "id": 61,
+    "timestamp": "2026-04-20T20:29:06.342194",
+    "employee_id": "15792",
+    "machine_id": "THROUGH",
+    "transcription_id": 79,
+    "intent": "MEASURE",
+    "speech_text": "Please machine through one zero watt and now this is a voltage",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  },
+  {
+    "id": 62,
+    "timestamp": "2026-04-20T20:29:20.668823",
+    "employee_id": "15792",
+    "machine_id": "311",
+    "transcription_id": 80,
+    "intent": "MEASURE",
+    "speech_text": "machine 311, and now this is the voltage.",
+    "action_key": "MEASURE_VOLT",
+    "command": {
+      "action": "READ_VOLT",
+      "target": "sensor_volt",
+      "description": "Read voltage sensor value",
+      "sensor_type": "volt"
+    },
+    "mqtt": {
+      "topic": "employees/15792/recorder",
+      "dispatched": false
+    }
+  }
+]
