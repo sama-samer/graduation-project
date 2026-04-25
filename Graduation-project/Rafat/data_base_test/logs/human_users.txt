@@ -1,0 +1,409 @@
+
+=== Snapshot: 2026-03-01 20:54:34 ===
+Table: human_users
+id: 1 | password: hashed_password_admin | full_name: Ahmed Raafat | phone_number: 01000000000 | department: IT Department | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:01 | mqtt_client_id: mqtt_user_100 | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+id: 2 | password: hashed_password_operator | full_name: Mohamed Ali | phone_number: 01000000001 | department: Production | device_ip: 192.168.1.11 | device_mac: AA:BB:CC:DD:EE:02 | mqtt_client_id: mqtt_user_101 | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+id: 3 | password: hashed_pass | full_name: Ahmed Raafat | phone_number: 0100 | department: None | device_ip: None | device_mac: None | mqtt_client_id: None | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+id: 4 | password: hashed_pass | full_name: Ahmed Raafat | phone_number: 0100 | department: None | device_ip: None | device_mac: None | mqtt_client_id: None | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+
+=== Snapshot: 2026-03-01 20:54:39 ===
+Table: human_users
+id: 1 | password: hashed_password_admin | full_name: Ahmed Raafat | phone_number: 01000000000 | department: IT Department | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:01 | mqtt_client_id: mqtt_user_100 | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+id: 2 | password: hashed_password_operator | full_name: Mohamed Ali | phone_number: 01000000001 | department: Production | device_ip: 192.168.1.11 | device_mac: AA:BB:CC:DD:EE:02 | mqtt_client_id: mqtt_user_101 | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+id: 3 | password: hashed_pass | full_name: Ahmed Raafat | phone_number: 0100 | department: None | device_ip: None | device_mac: None | mqtt_client_id: None | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+id: 4 | password: hashed_pass | full_name: Ahmed Raafat | phone_number: 0100 | department: None | device_ip: None | device_mac: None | mqtt_client_id: None | last_login: None | last_activity: None | total_records_sent: 0 | total_data_sent_bytes: 0 | transcription: None
+
+=== Snapshot: 2026-04-07 19:38:39 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:38:44 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:38:49 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:38:54 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:38:59 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:04 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:09 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:14 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:19 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:24 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:29 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:34 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:39 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:44 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:49 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:54 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:39:59 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:04 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:09 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:14 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:19 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:24 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:29 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:34 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:39 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:44 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:49 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:54 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:40:59 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:04 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:09 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:14 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:19 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:24 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:29 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:34 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:39 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:44 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:49 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:41:55 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:00 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:05 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:10 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:15 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:20 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:25 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:30 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:35 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:40 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:45 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:50 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:42:55 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:00 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:05 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:10 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:15 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:20 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:25 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:30 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:35 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:40 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:45 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:50 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:43:55 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:00 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:05 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:10 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:15 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:20 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:25 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:30 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:35 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:40 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:45 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:50 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:44:55 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:45:00 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:45:05 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d39540>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>
+
+=== Snapshot: 2026-04-07 19:45:10 ===
+Table: human_users
+id: 2 | password: hashed_pass | full_name: Ahmed Osama | phone_number: 01020 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:36:11.667063 | last_activity: 2026-03-04 22:56:11.059893 | total_records_sent: 7 | total_data_sent_bytes: 167641 | transcription: Recorded and saved | destination_id: 01010 | last_record: <memory at 0x754fd7d381c0>
+id: 1 | password: hashed_pass | full_name: Ahmed Rafat | phone_number: 01010 | department: IT | device_ip: 192.168.1.10 | device_mac: AA:BB:CC:DD:EE:FF | mqtt_client_id: mqtt_user_1 | last_login: 2026-03-04 22:56:00.021852 | last_activity: 2026-03-04 22:56:23.463887 | total_records_sent: 24 | total_data_sent_bytes: 974184 | transcription: Recorded and saved | destination_id: 01020 | last_record: <memory at 0x754fd7d39480>

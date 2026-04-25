@@ -1,0 +1,298 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-03-04T23:08:46.590897",
+    "file": "recordings\\recording_5.wav",
+    "language": "en",
+    "text": "",
+    "intent": "UNKNOWN",
+    "valid": false,
+    "segments": []
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-04T23:09:33.964565",
+    "file": "recordings\\recording_6.wav",
+    "language": "en",
+    "text": "Now I need you to open the sensor.",
+    "intent": "OPEN",
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Now I need you to open the sensor."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-04T23:19:52.663572",
+    "file": "recordings\\recording_7.wav",
+    "language": "en",
+    "text": "Open the ESP.",
+    "intent": "OPEN",
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Open the ESP."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-04T23:57:40.997673",
+    "file": "recordings\\recording_8.wav",
+    "language": "en",
+    "text": "Now I want you to open the sunset.",
+    "intent": "OPEN",
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Now I want you to open the sunset."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-09T15:30:13.545842",
+    "file": "recordings\\recording_11.wav",
+    "language": "en",
+    "text": "Recording please can you open the sensor?",
+    "intent": "OPEN",
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Recording please can you open the sensor?"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-04-09T13:52:48.520839",
+    "file": "recordings\\recording_12.wav",
+    "language": "ar",
+    "text": "\u0647\u0648 \u0627\u0644\u063a\u0637\u00f6h \u062c\u064a\u062f\u0130 \u064a\u0642\u0646ption noise \u0643\u0648\u0631\u062f\u0631\u0629",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.98,
+        "text": "\u0647\u0648 \u0627\u0644\u063a\u0637\u00f6h \u062c\u064a\u062f\u0130"
+      },
+      {
+        "start": 3.98,
+        "end": 7.42,
+        "text": "\u064a\u0642\u0646ption noise"
+      },
+      {
+        "start": 7.42,
+        "end": 9.42,
+        "text": "\u0643\u0648\u0631\u062f\u0631\u0629"
+      }
+    ],
+    "intent": "UNKNOWN",
+    "valid": false
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-04-09T16:10:39.169822",
+    "file": "recordings\\recording_13.wav",
+    "language": "en",
+    "text": "Hello, can you please open the e-speed?",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Hello, can you please open the e-speed?"
+      }
+    ],
+    "intent": "OPEN",
+    "valid": true
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-04-09T16:17:57.184042",
+    "file": "recordings\\recording_14.wav",
+    "language": "nl",
+    "text": "DE FACAUT P Meanwhile",
+    "segments": [
+      {
+        "start": 0.34,
+        "end": 1.06,
+        "text": "DE FACAUT"
+      },
+      {
+        "start": 1.14,
+        "end": 2.4,
+        "text": "P Meanwhile"
+      }
+    ],
+    "intent": "UNKNOWN",
+    "valid": false
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-04-09T16:22:55.478903",
+    "file": "recordings\\recording_15.wav",
+    "language": "en",
+    "text": "Please close the escape.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Please close the escape."
+      }
+    ],
+    "intent": "UNKNOWN",
+    "valid": false
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-04-09T16:26:46.392797",
+    "file": "recordings\\recording_16.wav",
+    "language": "en",
+    "text": "Please close the e-speed.",
+    "intent": "UNKNOWN",
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Please close the e-speed."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-04-09T16:27:22.859929",
+    "file": "recordings\\recording_17.wav",
+    "language": "de",
+    "text": "Kann yo crises analysieren Sie doch gut? Ich\u0456\u0456\u0456\u0456 Nikki",
+    "intent": "UNKNOWN",
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.72,
+        "text": "Kann yo crises analysieren Sie doch gut?"
+      },
+      {
+        "start": 2.96,
+        "end": 5.08,
+        "text": "Ich\u0456\u0456\u0456\u0456 Nikki"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-04-09T16:30:20.450265",
+    "file": "recordings\\recording.wav",
+    "text": "Can you please close the speak?",
+    "language": "en",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.0,
+        "text": " Can you please close the speak?",
+        "tokens": [
+          50364,
+          1664,
+          291,
+          1767,
+          1998,
+          264,
+          1710,
+          30,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.6562875270843506,
+        "compression_ratio": 0.8378378378378378,
+        "no_speech_prob": 0.4759124517440796
+      }
+    ],
+    "intent": "UNKNOWN",
+    "valid": false
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-04-09T16:30:48.209224",
+    "file": "recordings\\recording.wav",
+    "text": "\u00d6p\u00fcn de sesler. \u00d6p\u00fcn de sesler.",
+    "language": "tr",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.0,
+        "text": " \u00d6p\u00fcn de sesler. \u00d6p\u00fcn de sesler.",
+        "tokens": [
+          50364,
+          9158,
+          79,
+          3412,
+          368,
+          5385,
+          1918,
+          13,
+          9158,
+          79,
+          3412,
+          368,
+          5385,
+          1918,
+          13,
+          50564
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.8277903164134306,
+        "compression_ratio": 1.206896551724138,
+        "no_speech_prob": 0.1781499832868576
+      }
+    ],
+    "intent": "UNKNOWN",
+    "valid": false
+  },
+  {
+    "id": 14,
+    "timestamp": "2026-04-09T16:32:12.515306",
+    "file": "recordings\\recording.wav",
+    "text": "Can you please open the USB?",
+    "language": "en",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.0,
+        "text": " Can you please open the USB?",
+        "tokens": [
+          50364,
+          1664,
+          291,
+          1767,
+          1269,
+          264,
+          10109,
+          30,
+          50514
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.41283817291259767,
+        "compression_ratio": 0.7777777777777778,
+        "no_speech_prob": 0.2270115464925766
+      }
+    ],
+    "intent": "OPEN",
+    "valid": true
+  }
+]
