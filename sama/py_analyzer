@@ -1,0 +1,121 @@
+import whisper
+import sounddevice as sd
+import soundfile as sf
+import numpy as np
+import os
+import sys
+
+SAMPLE_RATE = 16000        # Whisper works best at 16kHz
+CHANNELS = 1
+RECORDINGS_DIR = "recordings" #directory to save the recordings 
+WHISPER_MODEL = "base"     
+
+#the map of words for intent
+INTENT_MAP = {
+    "OPEN": [
+        "open", "start", "launch", "turn on", "activate", "enable", "begin", "run"
+    ],
+    "ANALYZE": [
+        "analyze", "analyse", "read", "get", "fetch", "show", "check",
+        "measure", "sensor", "reading", "data", "value", "report"
+    ],
+}
+
+os.makedirs(RECORDINGS_DIR, exist_ok=True)
+
+def ensure_file(filepath: str):
+    """Create the file if it doesn't exist yet."""
+    if not os.path.exists(filepath):
+        open(filepath, "w").close()
+        print(f"[+] File created → {filepath}")
+
+def record_audio(filename: str, duration: int = None) -> str:
+    """
+    Record audio from microphone.
+    - If duration is given: records for that many seconds automatically.
+    - If duration is None: press Enter to stop.
+    Returns the saved file path.
+    """
+    filepath = os.path.join(RECORDINGS_DIR, filename)
+    ensure_file(filepath)
+    print("[*] Recording started...")
+
+    if duration:
+        audio_data = sd.rec(
+            int(duration * SAMPLE_RATE),
+            samplerate=SAMPLE_RATE,
+            channels=CHANNELS,
+            dtype="float32"
+        )
+        sd.wait()
+        print(f"[*] Recording stopped after {duration}s.")
+    else:
+        recorded_chunks = []
+
+        def callback(indata, frames, time, status):
+            recorded_chunks.append(indata.copy())
+
+        with sd.InputStream(samplerate=SAMPLE_RATE, channels=CHANNELS,
+                            dtype="float32", callback=callback):
+            input("    Press Enter to stop recording...\n")
+
+        audio_data = np.concatenate(recorded_chunks, axis=0)
+        print("[*] Recording stopped.")
+
+    sf.write(filepath, audio_data, SAMPLE_RATE)
+    print(f"[+] Audio saved → {filepath}")
+    return filepath
+
+
+def analyze_audio(filepath: str) -> dict:
+    """
+    Run Whisper on the given audio file.
+    Returns a dict with: text, language, segments.
+    """
+    print(f"[*] Loading Whisper model ({WHISPER_MODEL})...")
+    model = whisper.load_model(WHISPER_MODEL)
+
+    print(f"[*] Transcribing {filepath} ...")
+    result = model.transcribe(filepath)
+
+    output = {
+        "file": filepath,
+        "language": result.get("language", "unknown"),
+        "text": result["text"].strip(),
+        "segments": [
+            {
+                "start": round(s["start"], 2),
+                "end":   round(s["end"], 2),
+                "text":  s["text"].strip()
+            }
+            for s in result.get("segments", [])
+        ]
+    }
+
+    print(f"[+] Language detected : {output['language']}")
+    print(f"[+] Transcript        : {output['text']}")
+    return output
+
+
+# --- MAIN ---
+if __name__ == "__main__":
+    # Determine recording index from existing files
+    existing = [f for f in os.listdir(RECORDINGS_DIR) if f.endswith(".wav")]
+    index = len(existing) + 1
+    filename = f"recording_{index}.wav"
+
+    filepath = record_audio(filename, duration=None)
+
+    # Analyze
+    result = analyze_audio(filepath)
+
+    # Print full result
+    print("\n--- RESULT ---")
+    print(f"File     : {result['file']}")
+    print(f"Language : {result['language']}")
+    print(f"Text     : {result['text']}")
+
+    if result["segments"]:
+        print("\nSegments:")
+        for seg in result["segments"]:
+            print(f"  [{seg['start']}s → {seg['end']}s]  {seg['text']}")

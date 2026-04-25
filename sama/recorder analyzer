@@ -1,0 +1,207 @@
+import whisper
+import sounddevice as sd
+import soundfile as sf
+import numpy as np
+import os
+import json
+from datetime import datetime
+
+# --- CONFIG ---
+SAMPLE_RATE    = 16000       # Whisper works best at 16kHz
+CHANNELS       = 1
+RECORDINGS_DIR = "recordings"
+TRANSCRIPTIONS_FILE = "transcriptions.json"
+WHISPER_MODEL  = "base"     
+
+
+INTENT_MAP = {
+    "OPEN": [
+        "open", "start", "launch", "turn on", "activate", "enable", "begin", "run"
+    ],
+    "ANALYZE": [
+        "analyze", "analyse", "read", "get", "fetch", "show", "check",
+        "measure", "sensor", "reading", "data", "value", "report"
+    ],
+}
+
+def ensure_file(filepath: str, default_content: str = ""):
+    """Create the file (and parent dirs) if it doesn't exist."""
+    os.makedirs(os.path.dirname(filepath) if os.path.dirname(filepath) else ".", exist_ok=True)
+    if not os.path.exists(filepath):
+        with open(filepath, "w") as f:
+            f.write(default_content)
+        print(f"[+] File created → {filepath}")
+
+#for recording audio
+def record_audio(filename: str, duration: int = None) -> str:
+    """
+    Record audio from microphone.
+    - duration (int)  → records for that many seconds automatically.
+    - duration None   → press Enter to stop.
+    Returns the saved file path.
+    """
+    os.makedirs(RECORDINGS_DIR, exist_ok=True)
+    filepath = os.path.join(RECORDINGS_DIR, filename)
+    ensure_file(filepath)
+    print("[*] Recording started...")
+
+    if duration:
+        audio_data = sd.rec(
+            int(duration * SAMPLE_RATE),
+            samplerate=SAMPLE_RATE,
+            channels=CHANNELS,
+            dtype="float32"
+        )
+        sd.wait()
+        print(f"[*] Recording stopped after {duration}s.")
+    else:
+        recorded_chunks = []
+
+        def callback(indata, frames, time, status):
+            recorded_chunks.append(indata.copy())
+
+        with sd.InputStream(samplerate=SAMPLE_RATE, channels=CHANNELS,
+                            dtype="float32", callback=callback):
+            input("    Press Enter to stop recording...\n")
+
+        audio_data = np.concatenate(recorded_chunks, axis=0)
+        print("[*] Recording stopped.")
+
+    sf.write(filepath, audio_data, SAMPLE_RATE)
+    print(f"[+] Audio saved → {filepath}")
+    return filepath
+
+
+# ─────────────────────────────────────────────
+# STEP 2 — TRANSCRIBE
+# ─────────────────────────────────────────────
+
+def analyze_audio(filepath: str) -> dict:
+    """Run Whisper on the audio file. Returns transcript dict."""
+    print(f"[*] Loading Whisper model ({WHISPER_MODEL})...")
+    model = whisper.load_model(WHISPER_MODEL)
+
+    print(f"[*] Transcribing {filepath} ...")
+    result = model.transcribe(filepath)
+
+    output = {
+        "file":     filepath,
+        "language": result.get("language", "unknown"),
+        "text":     result["text"].strip(),
+        "segments": [
+            {
+                "start": round(s["start"], 2),
+                "end":   round(s["end"], 2),
+                "text":  s["text"].strip()
+            }
+            for s in result.get("segments", [])
+        ]
+    }
+
+    print(f"[+] Language  : {output['language']}")
+    print(f"[+] Transcript: {output['text']}")
+    return output
+
+def save_transcription(transcript: dict, intent: str, valid: bool):
+    """
+    Append the transcription + intent + validation result
+    to transcriptions.json. Creates the file if missing.
+    """
+    ensure_file(TRANSCRIPTIONS_FILE, default_content="[]")
+
+    with open(TRANSCRIPTIONS_FILE, "r") as f:
+        try:
+            records = json.load(f)
+        except json.JSONDecodeError:
+            records = []
+
+    record = {
+        "id":        len(records) + 1,
+        "timestamp": datetime.now().isoformat(),
+        "file":      transcript["file"],
+        "language":  transcript["language"],
+        "text":      transcript["text"],
+        "intent":    intent,
+        "valid":     valid,
+        "segments":  transcript["segments"],
+        # esp_command → added in next step
+    }
+
+    records.append(record)
+
+    with open(TRANSCRIPTIONS_FILE, "w") as f:
+        json.dump(records, f, indent=2)
+
+    print(f"[+] Saved to {TRANSCRIPTIONS_FILE}  (record #{record['id']})")
+    return record
+
+def detect_intent(text: str) -> str:
+    """
+    Match transcript text against INTENT_MAP keywords.
+    Returns the intent label or 'UNKNOWN'.
+    """
+    lowered = text.lower()
+    for intent, keywords in INTENT_MAP.items():
+        if any(kw in lowered for kw in keywords):
+            print(f"[+] Intent detected : {intent}")
+            return intent
+
+    print("[!] Intent: UNKNOWN")
+    return "UNKNOWN"
+
+
+def validate(text: str, intent: str) -> bool:
+    """
+    Validation rules:
+    - Text must not be empty
+    - Intent must be recognised (not UNKNOWN)
+    - Minimum 2 words
+    """
+    if not text or not text.strip():
+        print("[!] Validation FAILED — empty transcript")
+        return False
+
+    if intent == "UNKNOWN":
+        print("[!] Validation FAILED — unrecognised intent")
+        return False
+
+    if len(text.strip().split()) < 2:
+        print("[!] Validation FAILED — transcript too short")
+        return False
+
+    print("[+] Validation PASSED")
+    return True
+
+
+if __name__ == "__main__":
+    os.makedirs(RECORDINGS_DIR, exist_ok=True)
+
+    existing = [f for f in os.listdir(RECORDINGS_DIR) if f.endswith(".wav")]
+    index    = len(existing) + 1
+    filename = f"recording_{index}.wav"
+
+    # 1. Record
+    filepath   = record_audio(filename, duration=None)
+
+    # 2. Transcribe
+    transcript = analyze_audio(filepath)
+
+    # 3. Detect intent
+    intent     = detect_intent(transcript["text"])
+
+    # 4. Validate
+    valid      = validate(transcript["text"], intent)
+
+    # 5. Save to file
+    record     = save_transcription(transcript, intent, valid)
+
+    # 6. Summary
+    print("\n─────────── PIPELINE RESULT ───────────")
+    print(f"  File      : {record['file']}")
+    print(f"  Language  : {record['language']}")
+    print(f"  Text      : {record['text']}")
+    print(f"  Intent    : {record['intent']}")
+    print(f"  Valid     : {record['valid']}")
+    print(f"  Record ID : #{record['id']}")
+    print("  ESP cmd   : [ next step ]")
+    print("────────────────────────────────────────")

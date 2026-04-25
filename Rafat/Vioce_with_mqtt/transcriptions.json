@@ -1,0 +1,1962 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-04-19T18:46:04.407618",
+    "machine_id": "UNKNOWN_MACHINE",
+    "user_id": "123",
+    "file": "recordings/recording_1776617139.wav",
+    "language": "en",
+    "raw_text": "Okay, please open the machine.",
+    "command_text": "Okay, please open the machine.",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.2,
+        "text": "Okay, please open the machine."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-04-19T18:48:18.150642",
+    "machine_id": "UNKNOWN_MACHINE",
+    "user_id": "123",
+    "file": "recordings/recording_1776617295.wav",
+    "language": "fr",
+    "raw_text": "ok, R\u00e9ont tout et l'e tu orangois immaisimes que j'en aspelaise lui vis de tombe",
+    "command_text": "ok, R\u00e9ont tout et l'e tu orangois immaisimes que j'en aspelaise lui vis de tombe",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.14,
+        "text": "ok, R\u00e9ont tout et l'e tu orangois immaisimes que j'en aspelaise"
+      },
+      {
+        "start": 4.14,
+        "end": 4.96,
+        "text": "lui vis de tombe"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-04-19T18:49:01.621635",
+    "machine_id": "UNKNOWN_MACHINE",
+    "user_id": "123",
+    "file": "recordings/recording_1776617339.wav",
+    "language": "de",
+    "raw_text": "Jetzt sollte ihr an meinenwo\u015b\u0107 das Ganze 1....",
+    "command_text": "Jetzt sollte ihr an meinenwo\u015b\u0107 das Ganze 1....",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 17.54,
+        "text": "Jetzt sollte ihr an meinenwo\u015b\u0107 das Ganze 1...."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-04-19T18:55:11.475508",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776617710.wav",
+    "language": "en",
+    "raw_text": "Please open the Volvo.",
+    "command_text": "Please open the Volvo.",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.48,
+        "text": "Please open the Volvo."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-04-19T18:56:02.795620",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776617762.wav",
+    "language": "en",
+    "raw_text": "Please analysis the sense of a pair of machine C3103.",
+    "command_text": "Please analysis the sense of a pair of machine C3103.",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "Please analysis the sense of a pair of machine C3103."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-04-19T19:05:58.652321",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776618357.wav",
+    "language": "en",
+    "raw_text": "Please, analysis the current of the machine one zero zero three.",
+    "command_text": "Please, analysis the current of the machine one zero zero three.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Please, analysis the current of the machine one zero zero three."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-04-19T19:07:07.355437",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776618426.wav",
+    "language": "en",
+    "raw_text": "Okay, I want to analysis the whole, which of them seems the 1000-100-200. What?",
+    "command_text": "Okay, I want to analysis the whole, which of them seems the 1000-100-200. What?",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.48,
+        "text": "Okay, I want to analysis the whole, which of them seems the 1000-100-200."
+      },
+      {
+        "start": 5.48,
+        "end": 6.48,
+        "text": "What?"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-04-19T19:08:35.239851",
+    "employee_id": "15792",
+    "machine_id": "MACHINE_1004",
+    "file": "recordings/recording_1776618514.wav",
+    "language": "en",
+    "raw_text": "machine 1004 please read the wattage of your voltage.",
+    "command_text": "please read the wattage of your voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.48,
+        "text": "machine 1004 please read the wattage of your voltage."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-04-19T19:10:11.691708",
+    "employee_id": "15792",
+    "machine_id": "MACHINE_3101",
+    "file": "recordings/recording_1776618611.wav",
+    "language": "en",
+    "raw_text": "machine 3101 please analysis is a current",
+    "command_text": "please analysis is a current",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "machine 3101 please analysis is a current"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-04-19T19:15:09.133012",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776618896.wav",
+    "language": "bg",
+    "raw_text": "\u041c\u0435\u0449\u0430 \u0441 \u0440\u0438\u0433\u043e\u043d 0, \u0438 \u0434\u0430 thi \u043d\u0435 \u0441\u043f\u0430\u0441\u0435\u0442 kir\u0442\u043e\u0449\u0438! \u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u044f \u0438 \u0434\u0435\u0444\u0438\u0446 upload\u0443 \u0437\u0430 \u0442\u044a\u0440 bij\u0435 \u043e\u043f daqui \u0435 tricks.",
+    "command_text": "\u041c\u0435\u0449\u0430 \u0441 \u0440\u0438\u0433\u043e\u043d 0, \u0438 \u0434\u0430 thi \u043d\u0435 \u0441\u043f\u0430\u0441\u0435\u0442 kir\u0442\u043e\u0449\u0438! \u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u044f \u0438 \u0434\u0435\u0444\u0438\u0446 upload\u0443 \u0437\u0430 \u0442\u044a\u0440 bij\u0435 \u043e\u043f daqui \u0435 tricks.",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.7,
+        "text": "\u041c\u0435\u0449\u0430 \u0441 \u0440\u0438\u0433\u043e\u043d 0, \u0438 \u0434\u0430 thi \u043d\u0435 \u0441\u043f\u0430\u0441\u0435\u0442 kir\u0442\u043e\u0449\u0438!"
+      },
+      {
+        "start": 13.4,
+        "end": 21.6,
+        "text": "\u041f\u043e\u044d\u0442\u043e\u043c\u0443 \u044f \u0438 \u0434\u0435\u0444\u0438\u0446 upload\u0443 \u0437\u0430 \u0442\u044a\u0440 bij\u0435 \u043e\u043f daqui \u0435 tricks."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-04-19T19:15:50.821262",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776618947.wav",
+    "language": "en",
+    "raw_text": "Which means, three, one, zero Please. Once there's a voltage resident.",
+    "command_text": "Which means, three, one, zero Please. Once there's a voltage resident.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.14,
+        "text": "Which means, three, one, zero"
+      },
+      {
+        "start": 4.16,
+        "end": 6.08,
+        "text": "Please."
+      },
+      {
+        "start": 6.12,
+        "end": 6.36,
+        "text": "Once there's a voltage resident."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-04-19T19:16:28.958179",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776618987.wav",
+    "language": "en",
+    "raw_text": "machine, 30101, please announce this up and perpetrators.",
+    "command_text": "machine, 30101, please announce this up and perpetrators.",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": "machine, 30101, please announce this up and perpetrators."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-04-19T19:23:22.590755",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776619401.wav",
+    "language": "en",
+    "raw_text": "machine, c101, please! And that is the voltage.",
+    "command_text": "machine, c101, please! And that is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "text": "machine, c101, please!"
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "text": "And that is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "timestamp": "2026-04-19T19:36:19.445836",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776620178.wav",
+    "language": "en",
+    "raw_text": "machine. So you want to do one please. And this is a voltage.",
+    "command_text": "machine. So you want to do one please. And this is a voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "machine."
+      },
+      {
+        "start": 2.0,
+        "end": 4.0,
+        "text": "So you want to do one please."
+      },
+      {
+        "start": 4.0,
+        "end": 6.0,
+        "text": "And this is a voltage."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "timestamp": "2026-04-19T19:36:51.139392",
+    "employee_id": "15792",
+    "machine_id": "MACHINE_310",
+    "file": "recordings/recording_1776620210.wav",
+    "language": "en",
+    "raw_text": "machine 310 please, and that is the voltage.",
+    "command_text": "please, and that is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.2,
+        "text": "machine 310 please, and that is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "timestamp": "2026-04-19T19:38:19.292038",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776620294.wav",
+    "language": "ar",
+    "raw_text": "\u0633\u0627\u0628\u0639\u0629 \u0633\u0627\u0626\u0639",
+    "command_text": "\u0633\u0627\u0628\u0639\u0629 \u0633\u0627\u0626\u0639",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.26,
+        "text": "\u0633\u0627\u0628\u0639\u0629 \u0633\u0627\u0626\u0639"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "timestamp": "2026-04-19T19:39:26.816066",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776620361.wav",
+    "language": "ar",
+    "raw_text": "\u0647\u0630\u0647 rookie \u0627\u0644\u0645\u0634\u0e35 \u0627\u0644\u0646\u0638\u0627\u0645",
+    "command_text": "\u0647\u0630\u0647 rookie \u0627\u0644\u0645\u0634\u0e35 \u0627\u0644\u0646\u0638\u0627\u0645",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.74,
+        "end": 3.6,
+        "text": "\u0647\u0630\u0647 rookie"
+      },
+      {
+        "start": 4.34,
+        "end": 6.34,
+        "text": "\u0627\u0644\u0645\u0634\u0e35 \u0627\u0644\u0646\u0638\u0627\u0645"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "timestamp": "2026-04-19T19:42:20.562404",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776620539.wav",
+    "language": "en",
+    "raw_text": "Please machine a C1-01 and that is the voltage.",
+    "command_text": "Please machine a C1-01 and that is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "Please machine a C1-01 and that is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "timestamp": "2026-04-19T19:42:45.451362",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776620565.wav",
+    "language": "en",
+    "raw_text": "Please machine 3-1-Z-1 and analysis of voltage.",
+    "command_text": "Please machine 3-1-Z-1 and analysis of voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.28,
+        "text": "Please machine 3-1-Z-1 and analysis of voltage."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "timestamp": "2026-04-19T19:47:48.055785",
+    "employee_id": "15792",
+    "machine_id": "UNKNOWN_MACHINE",
+    "file": "recordings/recording_1776620867.wav",
+    "language": "en",
+    "raw_text": "Please machine 1, 2, 3, 4. And that is the voltage.",
+    "command_text": "Please machine 1, 2, 3, 4. And that is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Please machine 1, 2, 3, 4."
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "text": "And that is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "timestamp": "2026-04-19T19:50:49.059124",
+    "employee_id": "15792",
+    "machine_id": "3",
+    "file": "recordings/recording_1776621048.wav",
+    "language": "en",
+    "raw_text": "machine 3-1-0-1, please announce the voltage.",
+    "command_text": "-1-0-1, please announce the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.4,
+        "text": "machine 3-1-0-1, please announce the voltage."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "timestamp": "2026-04-19T19:51:34.557200",
+    "employee_id": "15792",
+    "machine_id": "30031",
+    "file": "recordings/recording_1776621094.wav",
+    "language": "en",
+    "raw_text": "Please, machine 300, 31, please analysis the voltage.",
+    "command_text": "Please,  please analysis the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": "Please, machine 300, 31, please analysis the voltage."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "timestamp": "2026-04-19T19:51:48.875053",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776621108.wav",
+    "language": "en",
+    "raw_text": "Please machine, please sell them 101. Please, analysis is a voltage.",
+    "command_text": "Please machine, please sell them 101. Please, analysis is a voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Please machine, please sell them 101."
+      },
+      {
+        "start": 3.0,
+        "end": 6.0,
+        "text": "Please, analysis is a voltage."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "timestamp": "2026-04-19T19:52:09.366998",
+    "employee_id": "15792",
+    "machine_id": "3000",
+    "file": "recordings/recording_1776621129.wav",
+    "language": "en",
+    "raw_text": "Please, machine 3000 and 100 and 1. And all this is the voltage.",
+    "command_text": "Please,  and 100 and 1. And all this is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.56,
+        "text": "Please, machine 3000 and 100 and 1."
+      },
+      {
+        "start": 5.56,
+        "end": 7.28,
+        "text": "And all this is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "timestamp": "2026-04-19T19:55:10.976881",
+    "employee_id": "15792",
+    "machine_id": "3",
+    "file": "recordings/recording_1776621310.wav",
+    "language": "en",
+    "raw_text": "machine 3-1-0-1 and this is a vote",
+    "command_text": "-1-0-1 and this is a vote",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.76,
+        "text": "machine 3-1-0-1 and this is a vote"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "timestamp": "2026-04-19T19:55:26.307929",
+    "employee_id": "15792",
+    "machine_id": "3100",
+    "file": "recordings/recording_1776621325.wav",
+    "language": "en",
+    "raw_text": "please machine 3000 100 and 1. Well it is a vote.",
+    "command_text": "please  and 1. Well it is a vote.",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "please machine 3000 100 and 1."
+      },
+      {
+        "start": 4.0,
+        "end": 6.0,
+        "text": "Well it is a vote."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "timestamp": "2026-04-19T19:56:20.850698",
+    "employee_id": "16572",
+    "machine_id": "300",
+    "file": "recordings/recording_1776621380.wav",
+    "language": "en",
+    "raw_text": "machine 300 and one open the state",
+    "command_text": "and one open the state",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.12,
+        "text": "machine 300 and one open the state"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "timestamp": "2026-04-19T20:01:12.904055",
+    "employee_id": "19534",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776621672.wav",
+    "language": "en",
+    "raw_text": "Please machine, see one, see one. And that is the voltage.",
+    "command_text": "Please machine, see one, see one. And that is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Please machine, see one, see one."
+      },
+      {
+        "start": 4.0,
+        "end": 6.0,
+        "text": "And that is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "timestamp": "2026-04-19T20:01:30.272605",
+    "employee_id": "19534",
+    "machine_id": "3",
+    "file": "recordings/recording_1776621689.wav",
+    "language": "en",
+    "raw_text": "There is machine 3-1-0-1 and analysis is the voltage.",
+    "command_text": "There is  -1-0-1 and analysis is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.68,
+        "text": "There is machine 3-1-0-1 and analysis is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "timestamp": "2026-04-19T20:04:17.700200",
+    "employee_id": "19534",
+    "machine_id": "1301",
+    "file": "recordings/recording_1776621857.wav",
+    "language": "en",
+    "raw_text": "machine 1300 and one open the state.",
+    "command_text": "open the state.",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "machine 1300 and one open the state."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "timestamp": "2026-04-19T20:04:39.422320",
+    "employee_id": "19534",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776621878.wav",
+    "language": "en",
+    "raw_text": "Please machine, please Southern 100 and 1. And unless it's the voltage.",
+    "command_text": "Please machine, please Southern 100 and 1. And unless it's the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Please machine, please Southern 100 and 1."
+      },
+      {
+        "start": 4.0,
+        "end": 6.0,
+        "text": "And unless it's the voltage."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "timestamp": "2026-04-19T20:04:53.045813",
+    "employee_id": "19534",
+    "machine_id": "104",
+    "file": "recordings/recording_1776621892.wav",
+    "language": "en",
+    "raw_text": "Please machine 3,100 and 1. Analysis is a voltage.",
+    "command_text": "Please  . Analysis is a voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.6,
+        "text": "Please machine 3,100 and 1."
+      },
+      {
+        "start": 4.6,
+        "end": 6.0,
+        "text": "Analysis is a voltage."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "timestamp": "2026-04-19T20:07:07.761535",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776622026.wav",
+    "language": "en",
+    "raw_text": "these machine 3101 and analysis the current.",
+    "command_text": "these and analysis the current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "these machine 3101 and analysis the current."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "timestamp": "2026-04-19T20:07:56.031363",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776622074.wav",
+    "language": "en",
+    "raw_text": "Star! please mention3",
+    "command_text": "Star! please mention3",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.44,
+        "text": "Star! please mention3"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "timestamp": "2026-04-19T20:08:15.946773",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776622095.wav",
+    "language": "en",
+    "raw_text": "Please machine 3,101 and analysis of voltage.",
+    "command_text": "Please and analysis of voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.28,
+        "text": "Please machine 3,101 and analysis of voltage."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "timestamp": "2026-04-19T20:08:32.751565",
+    "employee_id": "15792",
+    "machine_id": "3102",
+    "file": "recordings/recording_1776622112.wav",
+    "language": "en",
+    "raw_text": "Please machine 3102 I'm Mrs. Zestate",
+    "command_text": "Please I'm Mrs. Zestate",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.2,
+        "text": "Please machine 3102"
+      },
+      {
+        "start": 3.2,
+        "end": 6.0,
+        "text": "I'm Mrs. Zestate"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "timestamp": "2026-04-19T20:08:49.716278",
+    "employee_id": "15792",
+    "machine_id": "3102",
+    "file": "recordings/recording_1776622129.wav",
+    "language": "en",
+    "raw_text": "Please machine 3102 analysis the status",
+    "command_text": "Please analysis the status",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.4,
+        "text": "Please machine 3102 analysis the status"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "timestamp": "2026-04-19T20:09:23.981522",
+    "employee_id": "15972",
+    "machine_id": "SEE",
+    "file": "recordings/recording_1776622163.wav",
+    "language": "en",
+    "raw_text": "Please machine see ones in one and analysis the voltage",
+    "command_text": "Please   ones in one and analysis the voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.64,
+        "text": "Please machine see ones in one and analysis the voltage"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "timestamp": "2026-04-19T20:09:40.306721",
+    "employee_id": "15972",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776622179.wav",
+    "language": "en",
+    "raw_text": "Please machine 3101 and all this is a vault",
+    "command_text": "Please and all this is a vault",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Please machine 3101 and all this is a vault"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "timestamp": "2026-04-19T20:11:13.586230",
+    "employee_id": "19537",
+    "machine_id": "3102",
+    "file": "recordings/recording_1776622272.wav",
+    "language": "en",
+    "raw_text": "Please machine 3102.",
+    "command_text": "Please .",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Please machine 3102."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "timestamp": "2026-04-19T20:11:25.971215",
+    "employee_id": "19537",
+    "machine_id": "3103",
+    "file": "recordings/recording_1776622285.wav",
+    "language": "en",
+    "raw_text": "Please machine 3103 and this is the voltage",
+    "command_text": "Please and this is the voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.64,
+        "text": "Please machine 3103 and this is the voltage"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "timestamp": "2026-04-19T20:12:01.073454",
+    "employee_id": "19537",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776622320.wav",
+    "language": "en",
+    "raw_text": "Please machine 3-1-0-1. Open the machine.",
+    "command_text": "Please . Open the machine.",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": "Please machine 3-1-0-1. Open the machine."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "timestamp": "2026-04-19T20:12:27.889749",
+    "employee_id": "19537",
+    "machine_id": "310",
+    "file": "recordings/recording_1776622347.wav",
+    "language": "en",
+    "raw_text": "Please machine 310. Give me a message of all the voltage.",
+    "command_text": "Please . Give me a message of all the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Please machine 310."
+      },
+      {
+        "start": 5.0,
+        "end": 8.0,
+        "text": "Give me a message of all the voltage."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "timestamp": "2026-04-19T20:12:45.020755",
+    "employee_id": "19537",
+    "machine_id": "310",
+    "file": "recordings/recording_1776622364.wav",
+    "language": "en",
+    "raw_text": "Please machine 310 get me the voltage.",
+    "command_text": "Please get me the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Please machine 310 get me the voltage."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "timestamp": "2026-04-19T20:12:56.995442",
+    "employee_id": "19537",
+    "machine_id": "333",
+    "file": "recordings/recording_1776622376.wav",
+    "language": "en",
+    "raw_text": "Please machine 3, 3, 3, Give me the voltage.",
+    "command_text": "Please , Give me the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.6,
+        "text": "Please machine 3, 3, 3,"
+      },
+      {
+        "start": 2.6,
+        "end": 4.0,
+        "text": "Give me the voltage."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "timestamp": "2026-04-19T20:13:10.474524",
+    "employee_id": "19537",
+    "machine_id": "10000",
+    "file": "recordings/recording_1776622390.wav",
+    "language": "en",
+    "raw_text": "machine 10000 analysis of voltage",
+    "command_text": "analysis of voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "machine 10000 analysis of voltage"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "timestamp": "2026-04-19T20:13:22.329001",
+    "employee_id": "19537",
+    "machine_id": "3111",
+    "file": "recordings/recording_1776622402.wav",
+    "language": "en",
+    "raw_text": "machine 3111 analysis is the voltage",
+    "command_text": "analysis is the voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "machine 3111 analysis is the voltage"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "timestamp": "2026-04-19T20:19:13.755858",
+    "employee_id": "19570",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776622753.wav",
+    "language": "en",
+    "raw_text": "Please machine 3101 open the machine",
+    "command_text": "Please open the machine",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "Please machine 3101 open the machine"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "timestamp": "2026-04-20T18:19:48.731553",
+    "employee_id": "15792",
+    "machine_id": "NUMBER",
+    "file": "recordings/recording_1776701987.wav",
+    "language": "en",
+    "raw_text": "please machine number c1 0 1 analysis of voltage",
+    "command_text": "please   c1 0 1 analysis of voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "please machine number c1 0 1 analysis of voltage"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "timestamp": "2026-04-20T18:20:16.620329",
+    "employee_id": "15792",
+    "machine_id": "NUMBER",
+    "file": "recordings/recording_1776702016.wav",
+    "language": "en",
+    "raw_text": "Please machine number 3101 analysis of voltage",
+    "command_text": "Please   3101 analysis of voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.64,
+        "text": "Please machine number 3101 analysis of voltage"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "timestamp": "2026-04-20T18:20:29.073681",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776702028.wav",
+    "language": "en",
+    "raw_text": "These machine 3101 and LSS the voltage",
+    "command_text": "These and LSS the voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.56,
+        "text": "These machine 3101 and LSS the voltage"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "timestamp": "2026-04-20T18:27:40.800941",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776702460.wav",
+    "language": "en",
+    "raw_text": "Let's see if we want zero zero and that is the current.",
+    "command_text": "Let's see if we want zero zero and that is the current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Let's see if we want zero zero and that is the current."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "timestamp": "2026-04-20T18:28:02.749963",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776702482.wav",
+    "language": "en",
+    "raw_text": "please Rashid, C1, 0, 0, and Alice is a current.",
+    "command_text": "please Rashid, C1, 0, 0, and Alice is a current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.2,
+        "text": "please Rashid, C1, 0, 0, and Alice is a current."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "timestamp": "2026-04-20T18:29:46.036318",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776702585.wav",
+    "language": "en",
+    "raw_text": "please make sure you see one zero one and now this is a current",
+    "command_text": "please make sure you see one zero one and now this is a current",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "please make sure you see one zero one and now this is a current"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "timestamp": "2026-04-20T18:30:06.945820",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776702606.wav",
+    "language": "en",
+    "raw_text": "Please, machine 3-1-0-1 analysis the current.",
+    "command_text": "Please, analysis the current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Please, machine 3-1-0-1 analysis the current."
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "timestamp": "2026-04-20T18:30:49.689921",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776702649.wav",
+    "language": "en",
+    "raw_text": "Please, the scene, one, and that is the correct.",
+    "command_text": "Please, the scene, one, and that is the correct.",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.72,
+        "text": "Please, the scene, one, and that is the correct."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "timestamp": "2026-04-20T18:31:09.741782",
+    "employee_id": "15792",
+    "machine_id": "100",
+    "file": "recordings/recording_1776702668.wav",
+    "language": "en",
+    "raw_text": "Please machine 100,",
+    "command_text": "Please ,",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.12,
+        "text": "Please machine 100,"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "timestamp": "2026-04-20T18:31:35.019917",
+    "employee_id": "15792",
+    "machine_id": "100",
+    "file": "recordings/recording_1776702694.wav",
+    "language": "en",
+    "raw_text": "Please machine 100 and access the current.",
+    "command_text": "Please and access the current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Please machine 100 and access the current."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "timestamp": "2026-04-20T18:33:17.459743",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776702795.wav",
+    "language": "en",
+    "raw_text": "Please 1001 This is the currently-tabut cada",
+    "command_text": "Please 1001 This is the currently-tabut cada",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.1,
+        "text": "Please"
+      },
+      {
+        "start": 2.1,
+        "end": 3.3,
+        "text": "1001"
+      },
+      {
+        "start": 3.3,
+        "end": 5.56,
+        "text": "This is the currently-tabut cada"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "timestamp": "2026-04-20T18:33:30.410262",
+    "employee_id": "15792",
+    "machine_id": "C1-01",
+    "file": "recordings/recording_1776702809.wav",
+    "language": "en",
+    "raw_text": "Please machine C1-01. Analysis the current.",
+    "command_text": "Please  . Analysis the current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Please machine C1-01."
+      },
+      {
+        "start": 2.0,
+        "end": 4.0,
+        "text": "Analysis the current."
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "timestamp": "2026-04-20T18:33:44.544325",
+    "employee_id": "15792",
+    "machine_id": "C1",
+    "file": "recordings/recording_1776702824.wav",
+    "language": "en",
+    "raw_text": "Please, machine C1, 0, 1, and I'll just record.",
+    "command_text": "Please,  , 0, 1, and I'll just record.",
+    "intent": "UNKNOWN",
+    "action_key": null,
+    "sensor_type": null,
+    "order_type": null,
+    "quantity": null,
+    "valid": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.12,
+        "text": "Please, machine C1, 0, 1, and I'll just record."
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "timestamp": "2026-04-20T18:34:01.283575",
+    "employee_id": "15792",
+    "machine_id": "99999",
+    "file": "recordings/recording_1776702839.wav",
+    "language": "en",
+    "raw_text": "Please\u044f\u043d\u0438h, 50001 analysis is incorrect.",
+    "command_text": "Please\u044f\u043d\u0438h, 50001 analysis is incorrect.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_ALL",
+    "sensor_type": "all",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.68,
+        "text": "Please\u044f\u043d\u0438h, 50001 analysis is incorrect."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "timestamp": "2026-04-20T18:34:29.335375",
+    "employee_id": "15792",
+    "machine_id": "3",
+    "file": "recordings/recording_1776702868.wav",
+    "language": "en",
+    "raw_text": "Please machine 3u101 and access the voltage.",
+    "command_text": "Please u101 and access the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.2,
+        "text": "Please machine 3u101 and access the voltage."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "timestamp": "2026-04-20T18:34:56.079140",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776702895.wav",
+    "language": "en",
+    "raw_text": "machine 3101 analysis is voltage",
+    "command_text": "analysis is voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "machine 3101 analysis is voltage"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "timestamp": "2026-04-20T18:39:07.214190",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776703146.wav",
+    "language": "en",
+    "raw_text": "Please machine 3101. Open the device.",
+    "command_text": "Please . Open the device.",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": "Please machine 3101. Open the device."
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "timestamp": "2026-04-20T18:54:18.609107",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704057.wav",
+    "language": "en",
+    "raw_text": "Please machine 3-1-0-1 analysis of voltage.",
+    "command_text": "Please analysis of voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Please machine 3-1-0-1 analysis of voltage."
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "timestamp": "2026-04-20T18:55:05.125755",
+    "employee_id": "15792",
+    "machine_id": "SEE",
+    "file": "recordings/recording_1776704104.wav",
+    "language": "en",
+    "raw_text": "please machine see you one zero one analysis the current",
+    "command_text": "please   you one zero one analysis the current",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": "please machine see you one zero one analysis the current"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "timestamp": "2026-04-20T18:55:14.594615",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704114.wav",
+    "language": "en",
+    "raw_text": "Please, machine 3-1-0-1, analysis occurred.",
+    "command_text": "Please, , analysis occurred.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_ALL",
+    "sensor_type": "all",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Please, machine 3-1-0-1, analysis occurred."
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "timestamp": "2026-04-20T18:55:55.994274",
+    "employee_id": "15873",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704155.wav",
+    "language": "en",
+    "raw_text": "Please machine 3101 analysis of voltage.",
+    "command_text": "Please analysis of voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.24,
+        "text": "Please machine 3101 analysis of voltage."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "timestamp": "2026-04-20T18:58:02.281261",
+    "employee_id": "15873",
+    "machine_id": "310",
+    "file": "recordings/recording_1776704282.wav",
+    "language": "en",
+    "raw_text": "machine 310 open device",
+    "command_text": "open device",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "machine 310 open device"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "timestamp": "2026-04-20T18:58:12.542123",
+    "employee_id": "15873",
+    "machine_id": "C101",
+    "file": "recordings/recording_1776704292.wav",
+    "language": "en",
+    "raw_text": "machine C101 open device",
+    "command_text": "open device",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.24,
+        "text": "machine C101 open device"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "timestamp": "2026-04-20T18:58:22.080073",
+    "employee_id": "15873",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704301.wav",
+    "language": "en",
+    "raw_text": "machine 3101 open device",
+    "command_text": "open device",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "machine 3101 open device"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "timestamp": "2026-04-20T18:58:47.560566",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704326.wav",
+    "language": "en",
+    "raw_text": "machine 3101 open device",
+    "command_text": "open device",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "machine 3101 open device"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "timestamp": "2026-04-20T19:03:13.346084",
+    "employee_id": "15792",
+    "machine_id": "C1",
+    "file": "recordings/recording_1776704592.wav",
+    "language": "en",
+    "raw_text": "Please, machine C1, D1. And now this is the current.",
+    "command_text": "Please,  , D1. And now this is the current.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_AMPERE",
+    "sensor_type": "ampere",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.62,
+        "text": "Please, machine C1, D1."
+      },
+      {
+        "start": 3.62,
+        "end": 6.32,
+        "text": "And now this is the current."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "timestamp": "2026-04-20T19:03:35.270717",
+    "employee_id": "15792",
+    "machine_id": "31",
+    "file": "recordings/recording_1776704614.wav",
+    "language": "en",
+    "raw_text": "Please, please machine 3-1-Z-1 and that is the voltage.",
+    "command_text": "Please, please -Z-1 and that is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.8,
+        "text": "Please, please machine 3-1-Z-1 and that is the voltage."
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "timestamp": "2026-04-20T19:03:43.936344",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704623.wav",
+    "language": "en",
+    "raw_text": "Please machine 3101 and I will see the voltage",
+    "command_text": "Please and I will see the voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.92,
+        "text": "Please machine 3101 and I will see the voltage"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "timestamp": "2026-04-20T19:05:20.863187",
+    "employee_id": "15792",
+    "machine_id": "3102",
+    "file": "recordings/recording_1776704720.wav",
+    "language": "en",
+    "raw_text": "Please machine 3102 Open Device",
+    "command_text": "Please Open Device",
+    "intent": "ORDER",
+    "action_key": "ORDER_OPEN",
+    "sensor_type": null,
+    "order_type": "open",
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "text": "Please machine 3102"
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "text": "Open Device"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "timestamp": "2026-04-20T19:06:35.342248",
+    "employee_id": "15792",
+    "machine_id": "3101",
+    "file": "recordings/recording_1776704795.wav",
+    "language": "en",
+    "raw_text": "Please, machine 3101. Make production is 50.",
+    "command_text": "Please, . Make production is 50.",
+    "intent": "ORDER",
+    "action_key": "ORDER_PRODUCE",
+    "sensor_type": null,
+    "order_type": "produce",
+    "quantity": 50,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "Please, machine 3101. Make production is 50."
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "timestamp": "2026-04-20T20:29:06.342194",
+    "employee_id": "15792",
+    "machine_id": "THROUGH",
+    "file": "recordings/recording_1776709745.wav",
+    "language": "en",
+    "raw_text": "Please machine through one zero watt and now this is a voltage",
+    "command_text": "Please   one zero watt and now this is a voltage",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.64,
+        "text": "Please machine through one zero watt and now this is a voltage"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "timestamp": "2026-04-20T20:29:20.668823",
+    "employee_id": "15792",
+    "machine_id": "311",
+    "file": "recordings/recording_1776709759.wav",
+    "language": "en",
+    "raw_text": "machine 311, and now this is the voltage.",
+    "command_text": ", and now this is the voltage.",
+    "intent": "MEASURE",
+    "action_key": "MEASURE_VOLT",
+    "sensor_type": "volt",
+    "order_type": null,
+    "quantity": null,
+    "valid": true,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.46,
+        "text": "machine 311, and now this is the voltage."
+      }
+    ]
+  }
+]
