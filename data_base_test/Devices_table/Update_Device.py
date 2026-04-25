@@ -36,7 +36,8 @@ def update_device():
 
         # NEW: allow changing ID
         new_machine_id = input("New machine_id_range (leave empty to keep same): ")
-
+        
+        device_ip = input("New device_ip: ")
         id_employee_response = input("New id_empluyee_response: ")
         analysis_volte = input("New analysis_volte (FLOAT): ")
         analysis_amper = input("New analysis_amper (FLOAT): ")
@@ -53,6 +54,10 @@ def update_device():
         if new_machine_id:
             updates.append("machine_id_range = %s")
             values.append(new_machine_id)
+
+        if device_ip:
+            updates.append("device_ip = %s")
+            values.append(device_ip)
 
         if id_employee_response:
             updates.append("id_empluyee_response = %s")

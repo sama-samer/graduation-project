@@ -56,6 +56,7 @@ def insert_analysis_row(data, machine_id_range):
         conn = get_connection()
         cur = conn.cursor()
 
+        device_ip = data.get("device_ip")
         id_empluyee_response = data.get("id_empluyee_response")
         analysis_volte = to_float(data.get("analysis_volte"))
         analysis_amper = to_float(data.get("analysis_amper"))
@@ -69,6 +70,7 @@ def insert_analysis_row(data, machine_id_range):
             INSERT INTO {table}
             (
                 machine_id_range,
+                device_ip,
                 id_empluyee_response,
                 analysis_volte,
                 analysis_amper,
@@ -79,13 +81,14 @@ def insert_analysis_row(data, machine_id_range):
                 order_production,
                 "timestamp"
             )
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, CURRENT_TIMESTAMP)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, CURRENT_TIMESTAMP)
         """).format(table=sql.Identifier(table_name))
 
         cur.execute(
             query,
             (
                 machine_id_range,
+                device_ip,
                 id_empluyee_response,
                 analysis_volte,
                 analysis_amper,

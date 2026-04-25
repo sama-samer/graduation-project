@@ -23,6 +23,7 @@ def create_device_table(device_id):
                 id SERIAL PRIMARY KEY,
 
                 machine_id_range INTEGER,
+                device_ip VARCHAR(45),
                 id_empluyee_response VARCHAR(20),
 
                 analysis_volte DOUBLE PRECISION,

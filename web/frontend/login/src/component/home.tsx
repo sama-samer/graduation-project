@@ -1,151 +1,30 @@
 import React, { useState, useEffect } from "react";
 
-interface Employee {
-  id: string; 
-  user_name: string;
-  devices_assigned: string;
-  role_commend: string;
-}
-
-interface Machine {
-  id: number;
-  name: string;
-  model: string;
-  status: "online" | "offline" | "maintenance";
-}
-
-interface ModalProps {
-  title: string;
-  onClose: () => void;
-  children: React.ReactNode;
-}
-
-const Modal: React.FC<ModalProps> = ({ title, onClose, children }) => (
-  <div style={styles.overlay} onClick={onClose}>
-    <div style={styles.modal} onClick={(e) => e.stopPropagation()}>
-      <div style={styles.modalHeader}>
-        <span style={styles.modalTitle}>{title}</span>
-        <button style={styles.closeBtn} onClick={onClose}>✕</button>
-      </div>
-      <div style={styles.modalBody}>{children}</div>
-    </div>
-  </div>
-);
-
-// ─── Add User Form ────────────────────────────────────────────────────────────
-const AddUserForm: React.FC<{ onClose: () => void; onAdd: (user: any) => void }> = ({ onClose, onAdd }) => {
-  const [form, setForm] = useState({
-    id: "",
-    user_name: "",
-    password: "",
-    devices_assigned: "",
-    role_commend: "employee"
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onAdd({
-      id: form.id.trim(), 
-      user_name: form.user_name.trim(),
-      password: form.password,
-      devices_assigned: form.devices_assigned.trim(),
-      role_commend: form.role_commend
-    });
-  };
-
-  return (
-    <form onSubmit={handleSubmit} style={styles.form}>
-      <div style={styles.field}>
-        <label style={styles.label}>Employee ID</label>
-        <input style={styles.input} type="number" value={form.id} onChange={(e) => setForm({ ...form, id: e.target.value })} required placeholder="e.g. 15975" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Username</label>
-        <input style={styles.input} value={form.user_name} onChange={(e) => setForm({ ...form, user_name: e.target.value })} required placeholder="e.g. ahmed_rayan" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Password</label>
-        <input style={styles.input} type="password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} required placeholder="Enter secure password" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Devices Assigned Range</label>
-        <input style={styles.input} value={form.devices_assigned} onChange={(e) => setForm({ ...form, devices_assigned: e.target.value })} placeholder="e.g. 3101-3110 or 3105" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Role</label>
-        <select style={styles.input} value={form.role_commend} onChange={(e) => setForm({ ...form, role_commend: e.target.value })}>
-          <option value="employee">Employee</option>
-          <option value="manager">Manager</option>
-        </select>
-      </div>
-      <div style={styles.formActions}>
-        <button type="button" style={styles.cancelBtn} onClick={onClose}>Cancel</button>
-        <button type="submit" style={styles.submitBtn}>Add User</button>
-      </div>
-    </form>
-  );
-};
-
-// ─── Add Machine Form ─────────────────────────────────────────────────────────
-const AddMachineForm: React.FC<{ onClose: () => void; onAdd: (m: any) => void }> = ({ onClose, onAdd }) => {
-  const [form, setForm] = useState({
-    id: "",
-    name: "",
-    model: "",
-    status: "online" as "online" | "offline" | "maintenance",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onAdd({
-      id: parseInt(form.id),
-      name: form.name.trim(),
-      model: form.model.trim(),
-      status: form.status,
-    });
-  };
-
-  return (
-    <form onSubmit={handleSubmit} style={styles.form}>
-      <div style={styles.field}>
-        <label style={styles.label}>Device ID (Number only)</label>
-        <input style={styles.input} type="number" value={form.id} onChange={(e) => setForm({ ...form, id: e.target.value })} required placeholder="e.g. 3101 (Creates Device_3101)" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Machine Name</label>
-        <input style={styles.input} value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required placeholder="e.g. ROV-Alpha" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Model</label>
-        <input style={styles.input} value={form.model} onChange={(e) => setForm({ ...form, model: e.target.value })} required placeholder="e.g. EX-3000" />
-      </div>
-      <div style={styles.field}>
-        <label style={styles.label}>Status</label>
-        <select style={styles.input} value={form.status} onChange={(e) => setForm({ ...form, status: e.target.value as "online" | "offline" | "maintenance" })}>
-          <option value="online">Online</option>
-          <option value="offline">Offline</option>
-          <option value="maintenance">Maintenance</option>
-        </select>
-      </div>
-      <div style={styles.formActions}>
-        <button type="button" style={styles.cancelBtn} onClick={onClose}>Cancel</button>
-        <button type="submit" style={styles.submitBtn}>Create Device</button>
-      </div>
-    </form>
-  );
-};
-
-// ─── Home Page ────────────────────────────────────────────────────────────────
 const BASE_URL = "http://localhost:8000"; 
 
 const Home: React.FC = () => {
-  const [users, setUsers] = useState<Employee[]>([]);
-  const [machines, setMachines] = useState<Machine[]>([]);
+  const [users, setUsers] = useState<any[]>([]);
+  const [machines, setMachines] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [showAddUser, setShowAddUser] = useState(false);
-  const [showAddMachine, setShowAddMachine] = useState(false);
+  
+  // Strict Security State
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [authCreds, setAuthCreds] = useState({ username: "", password: "" });
+  const [pendingAction, setPendingAction] = useState<(() => void) | null>(null);
 
-  useEffect(() => {
+  // Modal States
+  const [showUserModal, setShowUserModal] = useState(false);
+  const [showMachineModal, setShowMachineModal] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
+
+  // Form states
+  const defaultEmp = { id: "", user_name: "", password: "", devices_assigned: "", role_commend: "employee" };
+  const defaultMac = { id: "", name: "", model: "", status: "online", device_ip: "" };
+  const [empForm, setEmpForm] = useState(defaultEmp);
+  const [macForm, setMacForm] = useState(defaultMac);
+
+  const fetchData = () => {
+    setLoading(true);
     Promise.all([
       fetch(`${BASE_URL}/users`).then(r => r.json()),
       fetch(`${BASE_URL}/machines`).then(r => r.json())
@@ -154,77 +33,127 @@ const Home: React.FC = () => {
       if (Array.isArray(m)) setMachines(m);
     }).catch(err => console.error("Backend offline", err))
       .finally(() => setLoading(false));
-  }, []);
+  };
 
-  const handleAddUser = async (user: any) => {
+  useEffect(() => { fetchData(); }, []);
+
+  // ─── Strict Security Wrapper ───
+  // EVERY time an action is requested, require password
+  const executeWithAuth = (action: () => void) => {
+    setPendingAction(() => action);
+    setAuthCreds({ username: "", password: "" }); // Clear old passwords
+    setShowAuthModal(true);
+  };
+
+  const handleAdminAuth = async (e: React.FormEvent) => {
+    e.preventDefault();
     try {
-      const res = await fetch(`${BASE_URL}/users`, {
-        method: "POST", 
-        headers: { "Content-Type": "application/json" }, 
-        body: JSON.stringify(user)
+      const res = await fetch(`${BASE_URL}/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(authCreds)
       });
       if (res.ok) {
-        const newUser = await res.json();
-        setUsers(prev => [...prev, newUser]);
-        setShowAddUser(false);
+        setShowAuthModal(false);
+        if (pendingAction) {
+          pendingAction(); // Execute the saved action ONLY if password is correct
+          setPendingAction(null);
+        }
+      } else {
+        const err = await res.json();
+        alert(`❌ Access Denied:\n${err.detail}`);
+      }
+    } catch (e) { alert("❌ Server Error connecting to Auth endpoint."); }
+  };
+
+  // ─── Actions ───
+  const actuallySaveUser = async () => {
+    const url = isEditing ? `${BASE_URL}/users/${empForm.id}` : `${BASE_URL}/users`;
+    const method = isEditing ? "PUT" : "POST";
+    try {
+      const res = await fetch(url, {
+        method, 
+        headers: { "Content-Type": "application/json" }, 
+        body: JSON.stringify({ ...empForm, user_name: empForm.user_name.trim() })
+      });
+      if (res.ok) {
+        setShowUserModal(false);
+        fetchData();
       } else {
         const err = await res.json();
         alert(`❌ Database Error:\n${err.detail}`);
       }
-    } catch (e) { alert(`❌ Server Error:\nCould not reach the backend API.`); }
+    } catch (e) { alert(`❌ Server Error`); }
   };
 
-  const handleAddMachine = async (machine: any) => {
+  const actuallySaveMachine = async () => {
+    const url = isEditing ? `${BASE_URL}/machines/${macForm.id}` : `${BASE_URL}/machines`;
+    const method = isEditing ? "PUT" : "POST";
     try {
-      const res = await fetch(`${BASE_URL}/machines`, {
-        method: "POST", 
+      const res = await fetch(url, {
+        method, 
         headers: { "Content-Type": "application/json" }, 
-        body: JSON.stringify(machine)
+        body: JSON.stringify({ ...macForm, id: parseInt(macForm.id), name: macForm.name.trim(), model: macForm.model.trim() })
       });
       if (res.ok) {
-        const newMachine = await res.json();
-        setMachines(prev => [...prev, newMachine]);
-        setShowAddMachine(false);
+        setShowMachineModal(false);
+        fetchData();
       } else {
         const err = await res.json();
         alert(`❌ Database Error:\n${err.detail}`);
       }
-    } catch (e) { alert(`❌ Server Error:\nCould not reach the backend API.`); }
+    } catch (e) { alert(`❌ Server Error`); }
   };
 
-  // ─── DELETE FUNCTIONS ───
-  const handleDeleteUser = async (id: string, username: string) => {
-    if (!window.confirm(`Are you sure you want to permanently delete Employee: ${username}?`)) return;
-    try {
-      const res = await fetch(`${BASE_URL}/users/${id}`, { method: "DELETE" });
-      if (res.ok) {
-        setUsers(users.filter(u => u.id !== id));
-      } else {
-        const err = await res.json();
-        alert(`❌ Failed to delete:\n${err.detail}`);
-      }
-    } catch (e) { alert(`❌ Server Error:\nCould not reach the backend API.`); }
+  const actuallyDeleteUser = async (id: string) => {
+    const res = await fetch(`${BASE_URL}/users/${id}`, { method: "DELETE" });
+    if (res.ok) setUsers(users.filter(u => u.id !== id));
   };
 
-  const handleDeleteMachine = async (id: number, name: string) => {
-    if (!window.confirm(`Are you sure you want to delete Device: ${name}?\nWARNING: This will drop the 'Device_${id}' table and all its data permanently.`)) return;
-    try {
-      const res = await fetch(`${BASE_URL}/machines/${id}`, { method: "DELETE" });
-      if (res.ok) {
-        setMachines(machines.filter(m => m.id !== id));
-      } else {
-        const err = await res.json();
-        alert(`❌ Failed to delete:\n${err.detail}`);
-      }
-    } catch (e) { alert(`❌ Server Error:\nCould not reach the backend API.`); }
+  const actuallyDeleteMachine = async (id: number) => {
+    const res = await fetch(`${BASE_URL}/machines/${id}`, { method: "DELETE" });
+    if (res.ok) setMachines(machines.filter(m => m.id !== id));
+  };
+
+  // Form Submit Handlers (These wrap the actual save with the Auth Gate)
+  const handleUserFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    executeWithAuth(actuallySaveUser);
+  };
+
+  const handleMachineFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    executeWithAuth(actuallySaveMachine);
+  };
+
+  const openUserModal = (user: any = null) => {
+    if (user) {
+      setIsEditing(true);
+      // Empty the password so it doesn't overwrite unless they type a new one
+      setEmpForm({ ...user, password: "" }); 
+    } else {
+      setIsEditing(false);
+      setEmpForm(defaultEmp);
+    }
+    setShowUserModal(true);
+  };
+
+  const openMachineModal = (machine: any = null) => {
+    if (machine) {
+      setIsEditing(true);
+      setMacForm({ ...machine, id: machine.id.toString() });
+    } else {
+      setIsEditing(false);
+      setMacForm(defaultMac);
+    }
+    setShowMachineModal(true);
   };
 
   const statusBadge = (text: string, type: "good" | "bad" | "warn") => {
     const colors = { good: "#22c55e", bad: "#ef4444", warn: "#f59e0b" };
     const color = colors[type];
     return (
-      <span style={{ ...styles.badge, background: `${color}22`, color: color, border: `1px solid ${color}55` }}>
-        <span style={{ width: 6, height: 6, borderRadius: "50%", background: color, display: "inline-block", marginRight: 5 }} />
+      <span style={{ padding: "3px 10px", borderRadius: 99, fontSize: 11, fontWeight: 600, display: "inline-flex", background: `${color}22`, color: color, border: `1px solid ${color}55` }}>
         {text.toUpperCase()}
       </span>
     );
@@ -233,66 +162,57 @@ const Home: React.FC = () => {
   return (
     <div style={styles.page}>
       <header style={styles.header}>
-        <div style={styles.logo}><span style={styles.logoAccent}>EVOX</span><span style={styles.logoLight}>AI</span></div>
-        <div style={styles.headerRight}><span style={styles.headerLabel}>Dashboard</span></div>
+        <div style={styles.logo}><span style={{color: "#38bdf8"}}>EVOX</span>AI</div>
+        <div>
+          <span style={{fontSize: 12, color: "#f59e0b", border: "1px solid #f59e0b", padding: "4px 8px", borderRadius: 4}}>Strict Security Mode: ON</span>
+        </div>
       </header>
 
       <main style={styles.main}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 36 }}>
-          <div>
-            <h1 style={styles.pageTitle}>Management Console</h1>
-            <p style={{...styles.pageSubtitle, marginBottom: 0}}>{loading ? "Loading data…" : `${users.length} Employees · ${machines.length} Devices`}</p>
-          </div>
-          
-          <button 
-            onClick={() => window.location.reload()} 
-            style={{...styles.cancelBtn, border: "1px solid rgba(56,189,248,0.5)", color: "#38bdf8", padding: "8px 16px"}}
-          >
-            ↻ Refresh Data
-          </button>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 36 }}>
+          <h1 style={{fontSize: 28, fontWeight: 700, margin: 0}}>Management Console</h1>
+          <button onClick={fetchData} style={{background: "transparent", border: "1px solid #38bdf8", color: "#38bdf8", padding: "8px 16px", borderRadius: 8, cursor: "pointer"}}>↻ Refresh</button>
         </div>
 
-        {loading ? (
-          <div style={styles.loader}><div style={styles.spinner} /></div>
-        ) : (
+        {loading ? <div style={{textAlign: "center", marginTop: 50}}>Loading...</div> : (
           <div style={styles.grid}>
             
             {/* ── Employees Table ── */}
             <section style={styles.card}>
               <div style={styles.cardHeader}>
-                <div><h2 style={styles.cardTitle}>Employees</h2></div>
-                <button style={styles.addBtn} onClick={() => setShowAddUser(true)}>+ Add Employee</button>
+                <h2 style={{fontSize: 16, margin: 0}}>Employees</h2>
+                <button style={styles.addBtn} onClick={() => openUserModal()}>+ Add Employee</button>
               </div>
               <div style={styles.tableWrapper}>
                 <table style={styles.table}>
                   <thead>
                     <tr>
-                      <th style={{...styles.th, width: "15%"}}>ID</th>
-                      <th style={{...styles.th, width: "25%"}}>Username</th>
-                      <th style={{...styles.th, width: "25%"}}>Devices</th>
-                      <th style={{...styles.th, width: "20%"}}>Role</th>
-                      <th style={{...styles.th, width: "15%", textAlign: "center"}}>Actions</th>
+                      <th style={styles.th}>ID</th>
+                      <th style={styles.th}>User</th>
+                      <th style={styles.th}>Devices (Range)</th> {/* Added to view */}
+                      <th style={styles.th}>Role</th>
+                      <th style={{...styles.th, textAlign: "center"}}>Actions</th>
+                      <th style={{...styles.th, textAlign: "right"}}>IP Address</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {users.map((u, i) => (
-                      <tr key={u.id} style={{ ...styles.tr, background: i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.02)" }}>
-                        <td style={styles.td}><span style={styles.idPill}>#{u.id}</span></td>
-                        <td style={{ ...styles.td, fontWeight: 600 }}>
-                          <div style={styles.truncate}>{u.user_name}</div>
-                        </td>
-                        <td style={{...styles.td, color: "#94a3b8"}}>
-                          <div style={styles.truncate}>{u.devices_assigned || "—"}</div>
-                        </td>
+                    {users.map(u => (
+                      <tr key={u.id} style={styles.tr}>
+                        <td style={styles.td}>#{u.id}</td>
+                        <td style={{...styles.td, fontWeight: 600}}>{u.user_name}</td>
+                        <td style={{...styles.td, color: "#94a3b8"}}>{u.devices_assigned || "—"}</td>
                         <td style={styles.td}>{statusBadge(u.role_commend, u.role_commend === "manager" ? "warn" : "good")}</td>
                         <td style={{...styles.td, textAlign: "center"}}>
-                          <button style={styles.deleteBtn} onClick={() => handleDeleteUser(u.id, u.user_name)}>
-                            Remove
-                          </button>
+                          <div style={{display: "flex", gap: "8px", justifyContent: "center"}}>
+                            <button style={styles.editBtn} onClick={() => openUserModal(u)}>Edit</button>
+                            <button style={styles.deleteBtn} onClick={() => {
+                                if(window.confirm(`Delete Employee #${u.id}?`)) executeWithAuth(() => actuallyDeleteUser(u.id))
+                            }}>Remove</button>
+                          </div>
                         </td>
+                        <td style={{...styles.td, fontFamily: "monospace", color: "#38bdf8", textAlign: "right"}}>{u.last_ip || "N/A"}</td>
                       </tr>
                     ))}
-                    {users.length === 0 && <tr><td colSpan={5} style={styles.empty}>No employees yet.</td></tr>}
                   </tbody>
                 </table>
               </div>
@@ -301,39 +221,37 @@ const Home: React.FC = () => {
             {/* ── Machines Table ── */}
             <section style={styles.card}>
               <div style={styles.cardHeader}>
-                <div><h2 style={styles.cardTitle}>Devices</h2></div>
-                <button style={styles.addBtn} onClick={() => setShowAddMachine(true)}>+ Add Device</button>
+                <h2 style={{fontSize: 16, margin: 0}}>Devices</h2>
+                <button style={styles.addBtn} onClick={() => openMachineModal()}>+ Add Device</button>
               </div>
               <div style={styles.tableWrapper}>
                 <table style={styles.table}>
                   <thead>
                     <tr>
-                      <th style={{...styles.th, width: "15%"}}>ID</th>
-                      <th style={{...styles.th, width: "25%"}}>Name</th>
-                      <th style={{...styles.th, width: "25%"}}>Model</th>
-                      <th style={{...styles.th, width: "20%"}}>Status</th>
-                      <th style={{...styles.th, width: "15%", textAlign: "center"}}>Actions</th>
+                      <th style={styles.th}>ID</th>
+                      <th style={styles.th}>Name</th>
+                      <th style={styles.th}>Status</th>
+                      <th style={{...styles.th, textAlign: "center"}}>Actions</th>
+                      <th style={{...styles.th, textAlign: "right"}}>IP Address</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {machines.map((m, i) => (
-                      <tr key={m.id} style={{ ...styles.tr, background: i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.02)" }}>
-                        <td style={styles.td}><span style={styles.idPill}>#{m.id}</span></td>
-                        <td style={{ ...styles.td, fontWeight: 600 }}>
-                           <div style={styles.truncate}>{m.name}</div>
-                        </td>
-                        <td style={{ ...styles.td, color: "#94a3b8" }}>
-                           <div style={styles.truncate}>{m.model}</div>
-                        </td>
-                        <td style={styles.td}>{statusBadge(m.status, m.status === "online" ? "good" : m.status === "offline" ? "bad" : "warn")}</td>
+                    {machines.map(m => (
+                      <tr key={m.id} style={styles.tr}>
+                        <td style={styles.td}>#{m.id}</td>
+                        <td style={{...styles.td, fontWeight: 600}}>{m.name}</td>
+                        <td style={styles.td}>{statusBadge(m.status, m.status === "online" ? "good" : "bad")}</td>
                         <td style={{...styles.td, textAlign: "center"}}>
-                          <button style={styles.deleteBtn} onClick={() => handleDeleteMachine(m.id, m.name)}>
-                            Remove
-                          </button>
+                          <div style={{display: "flex", gap: "8px", justifyContent: "center"}}>
+                            <button style={styles.editBtn} onClick={() => openMachineModal(m)}>Edit</button>
+                            <button style={styles.deleteBtn} onClick={() => {
+                                if(window.confirm(`Delete Device #${m.id}?`)) executeWithAuth(() => actuallyDeleteMachine(m.id))
+                            }}>Remove</button>
+                          </div>
                         </td>
+                        <td style={{...styles.td, fontFamily: "monospace", color: "#38bdf8", textAlign: "right"}}>{m.device_ip || "N/A"}</td>
                       </tr>
                     ))}
-                    {machines.length === 0 && <tr><td colSpan={5} style={styles.empty}>No devices yet.</td></tr>}
                   </tbody>
                 </table>
               </div>
@@ -343,16 +261,83 @@ const Home: React.FC = () => {
         )}
       </main>
 
-      {/* ── Modals ── */}
-      {showAddUser && (
-        <Modal title="Add New Employee" onClose={() => setShowAddUser(false)}>
-          <AddUserForm onClose={() => setShowAddUser(false)} onAdd={handleAddUser} />
-        </Modal>
+      {/* ── Security Auth Modal (Triggers on Save/Delete) ── */}
+      {showAuthModal && (
+        <div style={{...styles.modalOverlay, zIndex: 9999}}> {/* Highest z-index to overlay forms */}
+          <div style={{...styles.modalBackground, height: 400}}>
+            <div style={{...styles.shape, background: "linear-gradient(#1845ad, #23a2f6)", left: -80, top: -80}} />
+            <div style={{...styles.shape, background: "linear-gradient(to right, #ff512f, #f09819)", right: -30, bottom: -80}} />
+            <form onSubmit={handleAdminAuth} style={styles.glassForm}>
+              <button type="button" onClick={() => { setShowAuthModal(false); setPendingAction(null); }} style={styles.closeBtn}>✕</button>
+              <h3 style={styles.formTitle}>Authorization</h3>
+              <p style={{textAlign: "center", fontSize: 12, color: "#f59e0b", marginBottom: 20}}>Password required to execute this action.</p>
+              
+              <label style={styles.label}>Manager Username</label>
+              <input style={styles.input} type="text" placeholder="Username" required autoFocus value={authCreds.username} onChange={e => setAuthCreds({...authCreds, username: e.target.value})} />
+              <label style={styles.label}>Manager Password</label>
+              <input style={styles.input} type="password" placeholder="Password" required value={authCreds.password} onChange={e => setAuthCreds({...authCreds, password: e.target.value})} />
+              
+              <button type="submit" style={{...styles.submitBtn, marginTop: 25}}>Confirm Action</button>
+            </form>
+          </div>
+        </div>
       )}
-      {showAddMachine && (
-        <Modal title="Create New Device Table" onClose={() => setShowAddMachine(false)}>
-          <AddMachineForm onClose={() => setShowAddMachine(false)} onAdd={handleAddMachine} />
-        </Modal>
+
+      {/* ── Add/Edit Modals ── */}
+      {(showUserModal || showMachineModal) && (
+        <div style={styles.modalOverlay}>
+          <div style={{...styles.modalBackground, height: 650}}> {/* Increased height to fit all fields */}
+            <div style={{...styles.shape, background: "linear-gradient(#1845ad, #23a2f6)", left: -80, top: -80}} />
+            <div style={{...styles.shape, background: "linear-gradient(to right, #ff512f, #f09819)", right: -30, bottom: -80}} />
+            
+            {showUserModal ? (
+              <form onSubmit={handleUserFormSubmit} style={styles.glassForm}>
+                <button type="button" onClick={() => setShowUserModal(false)} style={styles.closeBtn}>✕</button>
+                <h3 style={styles.formTitle}>{isEditing ? "Edit Employee" : "Add Employee"}</h3>
+                
+                <label style={styles.label}>Employee ID</label>
+                <input style={styles.input} type="text" placeholder="e.g. 15975" required disabled={isEditing} value={empForm.id} onChange={e => setEmpForm({...empForm, id: e.target.value})} />
+
+                <label style={styles.label}>Username</label>
+                <input style={styles.input} type="text" placeholder="Username" required value={empForm.user_name} onChange={e => setEmpForm({...empForm, user_name: e.target.value})} />
+
+                {/* ADDED DEVICES ASSIGNED RANGE HERE */}
+                <label style={styles.label}>Assigned Devices (Range)</label>
+                <input style={styles.input} type="text" placeholder="e.g. 3101-3110" value={empForm.devices_assigned} onChange={e => setEmpForm({...empForm, devices_assigned: e.target.value})} />
+
+                <label style={styles.label}>{isEditing ? "New Password (Leave blank to keep current)" : "Password"}</label>
+                <input style={styles.input} type="password" placeholder="Password" required={!isEditing} value={empForm.password} onChange={e => setEmpForm({...empForm, password: e.target.value})} />
+
+                <label style={styles.label}>Role</label>
+                <select style={styles.input} value={empForm.role_commend} onChange={e => setEmpForm({...empForm, role_commend: e.target.value})}>
+                  <option value="employee">Employee</option>
+                  <option value="manager">Manager</option>
+                </select>
+
+                <button type="submit" style={styles.submitBtn}>{isEditing ? "Save Changes" : "Register User"}</button>
+              </form>
+            ) : (
+              <form onSubmit={handleMachineFormSubmit} style={styles.glassForm}>
+                <button type="button" onClick={() => setShowMachineModal(false)} style={styles.closeBtn}>✕</button>
+                <h3 style={styles.formTitle}>{isEditing ? "Edit Device" : "Create Device"}</h3>
+                
+                <label style={styles.label}>Device ID</label>
+                <input style={styles.input} type="number" placeholder="e.g. 3101" required disabled={isEditing} value={macForm.id} onChange={e => setMacForm({...macForm, id: e.target.value})} />
+
+                <label style={styles.label}>Machine Name</label>
+                <input style={styles.input} type="text" placeholder="e.g. ROV-Alpha" required value={macForm.name} onChange={e => setMacForm({...macForm, name: e.target.value})} />
+
+                <label style={styles.label}>Model</label>
+                <input style={styles.input} type="text" placeholder="e.g. EX-3000" required value={macForm.model} onChange={e => setMacForm({...macForm, model: e.target.value})} />
+
+                <label style={styles.label}>Device IP Address</label>
+                <input style={styles.input} type="text" placeholder="e.g. 192.168.1.50" value={macForm.device_ip} onChange={e => setMacForm({...macForm, device_ip: e.target.value})} />
+
+                <button type="submit" style={styles.submitBtn}>{isEditing ? "Save Changes" : "Register Device"}</button>
+              </form>
+            )}
+          </div>
+        </div>
       )}
     </div>
   );
@@ -360,89 +345,32 @@ const Home: React.FC = () => {
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
 const styles: Record<string, React.CSSProperties> = {
-  page: { minHeight: "100vh", background: "#0a0e1a", color: "#e2e8f0", fontFamily: "'DM Sans', 'Segoe UI', sans-serif" },
-  header: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 40px", borderBottom: "1px solid rgba(255,255,255,0.07)", background: "rgba(255,255,255,0.03)", backdropFilter: "blur(10px)" },
-  logo: { fontSize: 22, fontWeight: 800, letterSpacing: 1.5 },
-  logoAccent: { color: "#38bdf8" }, logoLight: { color: "#e2e8f0" },
-  headerLabel: { fontSize: 12, color: "#64748b", letterSpacing: 2, textTransform: "uppercase" },
-  main: { maxWidth: 1400, margin: "0 auto", padding: "40px 32px" },
-  pageTitle: { fontSize: 28, fontWeight: 700, marginBottom: 4, color: "#f1f5f9" },
-  pageSubtitle: { fontSize: 14, color: "#64748b", marginBottom: 36 },
-  loader: { display: "flex", justifyContent: "center", padding: "80px 0" },
-  spinner: { width: 36, height: 36, border: "3px solid rgba(56,189,248,0.15)", borderTop: "3px solid #38bdf8", borderRadius: "50%", animation: "spin 0.8s linear infinite" },
+  page: { minHeight: "100vh", background: "#080710", color: "#ffffff", fontFamily: "'Poppins', sans-serif" },
+  header: { display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 40px", borderBottom: "1px solid rgba(255,255,255,0.07)" },
+  logo: { fontSize: 24, fontWeight: "bold" },
+  main: { maxWidth: 1400, margin: "0 auto", padding: "40px" },
+  grid: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 30, alignItems: "start" },
+  card: { background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16 },
+  cardHeader: { display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px", borderBottom: "1px solid rgba(255,255,255,0.07)" },
+  addBtn: { padding: "8px 18px", background: "linear-gradient(135deg, #0ea5e9, #38bdf8)", border: "none", borderRadius: 8, color: "#fff", cursor: "pointer" },
+  tableWrapper: { overflowX: "auto", padding: "10px 20px" },
+  table: { width: "100%", borderCollapse: "collapse", fontSize: 13 },
+  th: { padding: "12px 10px", textAlign: "left", color: "#64748b", textTransform: "uppercase", borderBottom: "1px solid rgba(255,255,255,0.07)" },
+  tr: { borderBottom: "1px solid rgba(255,255,255,0.04)" },
+  td: { padding: "12px 10px" },
   
-  // ── GRID & CARD FIXES ──
-  grid: { 
-    display: "grid", 
-    gridTemplateColumns: "1fr 1fr", 
-    gap: 28,
-    alignItems: "start" 
-  },
-  card: { 
-    background: "rgba(255,255,255,0.04)", 
-    border: "1px solid rgba(255,255,255,0.08)", 
-    borderRadius: 16, 
-    overflow: "hidden",
-    display: "flex",
-    flexDirection: "column"
-  },
-  cardHeader: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 24px", borderBottom: "1px solid rgba(255,255,255,0.07)" },
-  cardTitle: { fontSize: 16, fontWeight: 700, color: "#f1f5f9", margin: 0 },
-  addBtn: { padding: "8px 18px", background: "linear-gradient(135deg, #0ea5e9, #38bdf8)", border: "none", borderRadius: 8, color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", transition: "0.2s" },
+  editBtn: { background: "rgba(56, 189, 248, 0.1)", border: "1px solid rgba(56, 189, 248, 0.3)", color: "#38bdf8", padding: "4px 10px", borderRadius: 4, cursor: "pointer", fontSize: 11 },
+  deleteBtn: { background: "rgba(239, 68, 68, 0.1)", border: "1px solid rgba(239, 68, 68, 0.3)", color: "#ef4444", padding: "4px 8px", borderRadius: 4, cursor: "pointer", fontSize: 11 },
   
-  // ── TABLE SYMMETRY FIXES ──
-  tableWrapper: { 
-    overflowX: "auto",
-    maxHeight: "600px", 
-    overflowY: "auto"
-  },
-  table: { 
-    width: "100%", 
-    borderCollapse: "collapse", 
-    fontSize: 13,
-    tableLayout: "fixed" 
-  },
-  th: { padding: "12px 16px", textAlign: "left", color: "#64748b", fontWeight: 600, textTransform: "uppercase", fontSize: 11, borderBottom: "1px solid rgba(255,255,255,0.07)" },
-  tr: { transition: "background 0.1s" },
-  td: { padding: "13px 16px", borderBottom: "1px solid rgba(255,255,255,0.04)", verticalAlign: "middle" },
-  
-  // ── TRUNCATION & BUTTONS ──
-  truncate: {
-    whiteSpace: "nowrap",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    maxWidth: "100%"
-  },
-  deleteBtn: {
-    background: "rgba(239, 68, 68, 0.1)",
-    border: "1px solid rgba(239, 68, 68, 0.3)",
-    color: "#ef4444",
-    padding: "5px 10px",
-    borderRadius: "6px",
-    fontSize: "11px",
-    fontWeight: "bold",
-    cursor: "pointer",
-    textTransform: "uppercase"
-  },
-  
-  idPill: { background: "rgba(56,189,248,0.1)", color: "#38bdf8", padding: "2px 8px", borderRadius: 99, fontSize: 12, fontWeight: 700 },
-  badge: { padding: "3px 10px", borderRadius: 99, fontSize: 11, fontWeight: 600, display: "inline-flex", alignItems: "center" },
-  empty: { textAlign: "center", color: "#64748b", padding: "30px", fontStyle: "italic" },
-  
-  // ── MODALS ──
-  overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.65)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 1000, backdropFilter: "blur(4px)" },
-  modal: { background: "#111827", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 16, width: "100%", maxWidth: 460, boxShadow: "0 25px 60px rgba(0,0,0,0.5)" },
-  modalHeader: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "20px 24px", borderBottom: "1px solid rgba(255,255,255,0.08)" },
-  modalTitle: { fontSize: 16, fontWeight: 700, color: "#f1f5f9" },
-  closeBtn: { background: "none", border: "none", color: "#64748b", cursor: "pointer", fontSize: 16 },
-  modalBody: { padding: "24px" },
-  form: { display: "flex", flexDirection: "column", gap: 18 },
-  field: { display: "flex", flexDirection: "column", gap: 6 },
-  label: { fontSize: 12, fontWeight: 600, color: "#94a3b8", textTransform: "uppercase" },
-  input: { background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, padding: "10px 14px", color: "#e2e8f0", fontSize: 14, outline: "none" },
-  formActions: { display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 4 },
-  cancelBtn: { padding: "9px 20px", background: "transparent", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 8, color: "#94a3b8", cursor: "pointer", fontSize: 13 },
-  submitBtn: { padding: "9px 20px", background: "linear-gradient(135deg, #0ea5e9, #38bdf8)", border: "none", borderRadius: 8, color: "#fff", fontWeight: 600, cursor: "pointer", fontSize: 13 },
+  modalOverlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 1000 },
+  modalBackground: { width: 430, position: "relative" },
+  shape: { height: 200, width: 200, position: "absolute", borderRadius: "50%" },
+  glassForm: { position: "absolute", height: "100%", width: 400, backgroundColor: "rgba(255,255,255,0.13)", transform: "translate(-50%, -50%)", top: "50%", left: "50%", borderRadius: 10, backdropFilter: "blur(10px)", border: "2px solid rgba(255,255,255,0.1)", boxShadow: "0 0 40px rgba(8,7,16,0.6)", padding: "40px 35px", boxSizing: "border-box" },
+  formTitle: { fontSize: 28, fontWeight: 500, textAlign: "center", margin: "0 0 10px 0", color: "#fff" },
+  label: { display: "block", marginTop: 15, fontSize: 12, fontWeight: 500, color: "#fff", textTransform: "uppercase" },
+  input: { display: "block", height: 40, width: "100%", backgroundColor: "rgba(255,255,255,0.07)", borderRadius: 3, padding: "0 10px", marginTop: 5, fontSize: 13, color: "#fff", border: "none", outline: "none", boxSizing: "border-box" },
+  submitBtn: { marginTop: 30, width: "100%", backgroundColor: "#ffffff", color: "#080710", padding: "12px 0", fontSize: 16, fontWeight: 600, borderRadius: 5, cursor: "pointer", border: "none" },
+  closeBtn: { position: "absolute", top: 15, right: 20, background: "transparent", border: "none", color: "#fff", cursor: "pointer", fontSize: 20, fontWeight: "bold", zIndex: 10 }
 };
 
 export default Home;

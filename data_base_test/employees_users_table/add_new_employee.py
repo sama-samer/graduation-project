@@ -19,20 +19,22 @@ def add_employee():
         username = input("Enter username: ")
         password = input("Enter password: ")
         devices = input("Enter devices range (e.g. 1-10 or dev1,dev2): ")
-
+        
         role = input("Enter role (employee/manager): ").lower()
         if role not in ["employee", "manager"]:
             print("❌ Invalid role!")
             return
+            
+        last_ip = input("Enter Employee IP address (optional): ")
 
         # ---- Hash password ----
         hashed_password = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
-        # ---- Insert ----
+        # ---- Insert (last_ip added to the very end) ----
         cur.execute("""
-            INSERT INTO employees_users (id, user_name, user_password, devices_assigned, role_commend)
-            VALUES (%s, %s, %s, %s, %s)
-        """, (emp_id, username, hashed_password, devices, role))
+            INSERT INTO employees_users (id, user_name, user_password, devices_assigned, role_commend, last_ip)
+            VALUES (%s, %s, %s, %s, %s, %s)
+        """, (emp_id, username, hashed_password, devices, role, last_ip if last_ip else None))
 
         conn.commit()
 
@@ -46,4 +48,5 @@ def add_employee():
 
 
 # Run
-add_employee()
+if __name__ == "__main__":
+    add_employee()

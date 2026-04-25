@@ -77,6 +77,7 @@ def update_employee():
         password = input("New password: ")
         devices = get_valid_devices()
         role = get_valid_role()
+        last_ip = input("New Employee IP Address (optional): ")
 
         updates = []
         values = []
@@ -97,6 +98,10 @@ def update_employee():
         if role:
             updates.append("role_commend = %s")
             values.append(role)
+            
+        if last_ip:
+            updates.append("last_ip = %s")
+            values.append(last_ip)
 
         if not updates:
             print("⚠️ Nothing to update.")
@@ -123,7 +128,7 @@ def update_employee():
 
 
 # ==========================
-# Run البرنامج
+# Run
 # ==========================
 if __name__ == "__main__":
     update_employee()

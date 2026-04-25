@@ -24,6 +24,7 @@ def add_device_row():
             print("❌ machine_id_range is required!")
 
         # Optional fields
+        device_ip = input("Enter device_ip: ")
         id_empluyee_response = input("Enter id_empluyee_response: ")
         analysis_volte = input("Enter analysis_volte (FLOAT): ")
         analysis_amper = input("Enter analysis_amper (FLOAT): ")
@@ -35,11 +36,12 @@ def add_device_row():
 
         cur.execute("""
             INSERT INTO "Device_3101"
-            (machine_id_range, id_empluyee_response, analysis_volte, analysis_amper,
+            (machine_id_range, device_ip, id_empluyee_response, analysis_volte, analysis_amper,
              analysis_productivity, analysis_stat, analysis_temperature, order_stat, order_production)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """, (
             machine_id_range,
+            device_ip if device_ip else None,
             id_empluyee_response if id_empluyee_response else None,
             analysis_volte if analysis_volte else None,
             analysis_amper if analysis_amper else None,

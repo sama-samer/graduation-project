@@ -14,6 +14,7 @@ def add_device():
         cur = conn.cursor()
 
         machine_id_range = input("Enter machine_id_range (1-N): ")
+        device_ip = input("Enter device_ip: ")
         id_empluyee_response = input("Enter id_empluyee_response: ")
         analysis_volte = input("Enter analysis_volte (FLOAT): ")
         analysis_amper = input("Enter analysis_amper (FLOAT): ")
@@ -25,11 +26,12 @@ def add_device():
 
         cur.execute("""
             INSERT INTO "Device_3101"
-            (machine_id_range, id_empluyee_response, analysis_volte, analysis_amper,
+            (machine_id_range, device_ip, id_empluyee_response, analysis_volte, analysis_amper,
              analysis_productivity, analysis_stat, analysis_temperature, order_stat, order_production)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """, (
             machine_id_range,
+            device_ip,
             id_empluyee_response,
             analysis_volte,
             analysis_amper,
