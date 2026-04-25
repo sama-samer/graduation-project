@@ -1,0 +1,5 @@
+openai-whisper
+psycopg2-binary
+paho-mqtt
+sounddevice 
+scipy
